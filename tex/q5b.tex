@@ -510,13 +510,18 @@ tested primes.
       The sign structure in~\eqref{eq:leff} reflects the hyperbolic character forced by
       Born--Infeld admissibility (Section~\ref{sec:lorentz}).
 
-      \begin{remark}[Relation to the 1D shadow]
+      \begin{remark}[Relation to the 1D shadow and naming convention]
 On the spatial slice $\{\tau = \text{const}\}$, the operator $L_{\mathrm{eff}}$ reduces to
 $A_H \DeltaH$.
 In the Schr\"{o}dinger representation at $\xi = 1$, the kinetic sector of $A_H \DeltaH$
 maps to $A_H \partial_k^2$, which is $-\LPi = A \partial_x^2$ upon relabeling
 $k \to x$ and identifying $A_H = A$.
 This confirms the reading of $\LPi$ as the ``one-dimensional shadow'' stated in Q5a.
+Note on naming: the companion paper Q6~\cite{Beau2026q6} uses the notation $L_\Pi$
+to denote the full four-dimensional effective operator on $\mathbb{R}_\tau \times \HeisR$,
+which is what the present paper calls $L_{\mathrm{eff}}$.
+The notation $L_\Pi$ is reserved here for the one-dimensional Mosco limit operator
+of Q5a, consistently with~\cite{Beau2026q5a}.
       \end{remark}
 
     \subsection{Principal symbol and metric extraction}
@@ -577,14 +582,14 @@ This confirms the reading of $\LPi$ as the ``one-dimensional shadow'' stated in 
 
       \begin{theorem}[Metric extraction; conditional on {[H-lift]} and Q5a hypotheses]
         \label{thm:metric}
-        Under Hypothesis~[H-lift] and the Q5a hypotheses {\rm [H1]}, {\rm [H-w]},
-          {\rm [H-E1]}, {\rm [C]}, the Mosco limit operator $\LPi = -A\partial_x^2$ lifts
+        Under Hypothesis~[H-lift] and the Q5a hypotheses \textrm{[H1]}, \textrm{[H-w]},
+        \textrm{[H-E1]}, \textrm{[C]}, the Mosco limit operator $\LPi = -A\partial_x^2$ lifts
         to the effective operator $L_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times \HeisR$
         given by~\eqref{eq:leff}.
         Its principal symbol defines, via~\eqref{eq:op-metric}, a leading-order effective
         co-metric tensor
         \begin{equation}
-          g^{\mu\nu}(p) = \mathrm{diag}(-A_\tau,\; A_H,\; A_H,\; 0_z\text{-corrected})
+          g^{\mu\nu}(p) = \mathrm{diag}(-A_\tau,\; A_H,\; A_H,\; 0_{z\text{-sector (sub-principal)}})
           \label{eq:metric-tensor}
         \end{equation}
         on $\mathbb{R}_\tau \times \HeisR$, where the $z$-component carries sub-Riemannian
