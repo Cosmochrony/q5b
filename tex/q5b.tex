@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{geometry}
+\usepackage{doi}
 \geometry{margin=2.5cm}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -85,7 +86,7 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
 
   \subsection{Context and what Q5a establishes}
 
-    The Foundation paper~\cite{Beau2026fm} derives, from four axioms governing admissible
+    The Foundation paper~\cite{Beau2026m} derives, from four axioms governing admissible
     non-injective transitions, that the symmetry group of the admissible fibre $F_n$ is
     isomorphic to $\HeisZ$ for some prime $q$, and that $F_n$ carries the Weil representation
     $V_\rho$ on $L^2(\mathbb{Z}/q\mathbb{Z})$.
@@ -345,7 +346,7 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
       the projective ordering direction~$\tau$ (structural output of the admissibility
       cascade~\cite{Beau2026pto,Cosmochrony}) and the relational spatial structure
       encoded by $\HeisR$ (structural output of the Heisenberg symmetry derivation
-      of~\cite{Beau2026fm,Beau2026hs}).
+      of~\cite{Beau2026m,Beau2026HeisenbergStructure}).
       The BFS shells $\{\Sn\}$ foliate this product: for fixed $\tau = n$, each shell is a
       copy of the CC sphere $\partial B_n^{\dCC}$ in the Heis$_3$ factor.
       The homogeneous dimension $\Dhom = 4$ of $\HeisR$ means that the spatial factor
@@ -444,42 +445,42 @@ tested primes.
     \label{ssec:hlift}
 
     \begin{hypothesis}
-          [[H-lift]]
-        \label{hyp:lift}
-        The operator $\LPi = -A\partial_x^2$ obtained in Q5a as the Mosco limit of the
+      [[H-lift]]
+      \label{hyp:lift}
+      The operator $\LPi = -A\partial_x^2$ obtained in Q5a as the Mosco limit of the
       admissibility forms $\Eq$ is the image, under the Schr\"{o}dinger representation
-        $\pi_1$ at unit central character $\xi = 1$, of the kinetic sector of the sub-Laplacian
-        $\DeltaH$ on $\HeisR$, restricted to the admissible (low-energy) subspace of
-        $L^2(\mathbb{R})$.
+      $\pi_1$ at unit central character $\xi = 1$, of the kinetic sector of the sub-Laplacian
+      $\DeltaH$ on $\HeisR$, restricted to the admissible (low-energy) subspace of
+      $L^2(\mathbb{R})$.
       Equivalently, the full sub-Laplacian $\DeltaH$ on $\HeisR$ is the pre-image (under
-        $\pi_1$) of the harmonic oscillator $\partial_k^2 - k^2$, and $\LPi$ is its kinetic
+      $\pi_1$) of the harmonic oscillator $\partial_k^2 - k^2$, and $\LPi$ is its kinetic
       component in the admissible sector.
     \end{hypothesis}
 
     \begin{remark}
-          [Justification of [H-lift]]
-        \label{rem:hlift-justification}
-        Hypothesis~[H-lift] is supported by three structural observations:
-        \begin{enumerate}
-          \item Q5a (T2) establishes that the rescaled Weil generators $\hat X_q / \sqrt{q}$,
-          $\hat Y_q / \sqrt{q}$ converge strongly to the metaplectic generators
-          $d\pi_1(\tilde X) = \partial_k$ and $d\pi_1(\tilde Y) = ik$, which are precisely the
-          generators entering $\DeltaH$ via~\eqref{eq:generators-rep}.
-          \item The Mosco limit (T3 of Q5a) captures only the kinetic sector, consistently with
-          the sector-dominance analysis of Section~\ref{sec:lift}.2.
-          This is a structural prediction: the admissibility filter must project out the potential
-          term to produce a coercive (not oscillatory) Dirichlet form.
-          \item The operator identity $d\pi_\xi(\DeltaH) = \partial_k^2 - (2\pi\xi)^2 k^2$
-          shows that the kinetic sector of $\DeltaH$ and $\LPi$ share the same functional form
-          $-A\partial_k^2$ up to the overall constant $A$ (which absorbs the central character
-          $\xi$ and the admissibility weight from [H-w] of Q5a).
-        \end{enumerate}
-        The main open step is a direct proof that the Mosco limit of $\Eq$ coincides with the
+      [Justification of [H-lift]]
+      \label{rem:hlift-justification}
+      Hypothesis~[H-lift] is supported by three structural observations:
+      \begin{enumerate}
+        \item Q5a (T2) establishes that the rescaled Weil generators $\hat X_q / \sqrt{q}$,
+        $\hat Y_q / \sqrt{q}$ converge strongly to the metaplectic generators
+        $d\pi_1(\tilde X) = \partial_k$ and $d\pi_1(\tilde Y) = ik$, which are precisely the
+        generators entering $\DeltaH$ via~\eqref{eq:generators-rep}.
+        \item The Mosco limit (T3 of Q5a) captures only the kinetic sector, consistently with
+        the sector-dominance analysis of Section~\ref{sec:lift}.2.
+        This is a structural prediction: the admissibility filter must project out the potential
+        term to produce a coercive (not oscillatory) Dirichlet form.
+        \item The operator identity $d\pi_\xi(\DeltaH) = \partial_k^2 - (2\pi\xi)^2 k^2$
+        shows that the kinetic sector of $\DeltaH$ and $\LPi$ share the same functional form
+        $-A\partial_k^2$ up to the overall constant $A$ (which absorbs the central character
+        $\xi$ and the admissibility weight from [H-w] of Q5a).
+      \end{enumerate}
+      The main open step is a direct proof that the Mosco limit of $\Eq$ coincides with the
       kinetic sector of $d\pi_1(\DeltaH)$ modulo the potential contribution, which is
       deferred to open problem Q5b-O1.
       This lifting should be understood as a representation-theoretic correspondence
       rather than a pointwise identification of operators: it asserts that
-        $\LPi$ and the kinetic sector of $d\pi_1(\DeltaH)$ define the same quadratic
+      $\LPi$ and the kinetic sector of $d\pi_1(\DeltaH)$ define the same quadratic
       form on the admissible subspace of $L^2(\mathbb{R})$, not that they are equal
       as unbounded operators on all of $L^2(\mathbb{R})$.
       This correspondence is understood in a weak (spectral or representation-theoretic)
@@ -526,7 +527,7 @@ In the Schr\"{o}dinger representation at $\xi = 1$, the kinetic sector of $A_H \
 maps to $A_H \partial_k^2$, which is $-\LPi = A \partial_x^2$ upon relabeling
 $k \to x$ and identifying $A_H = A$.
 This confirms the reading of $\LPi$ as the ``one-dimensional shadow'' stated in Q5a.
-Note on naming: the companion paper Q6~\cite{Beau2026q6} uses the notation $L_\Pi$
+Note on naming: the companion paper Q6b~\cite{Beau2026q6b} uses the notation $L_\Pi$
 to denote the full four-dimensional effective operator on $\mathbb{R}_\tau \times \HeisR$,
 which is what the present paper calls $L_{\mathrm{eff}}$.
 The notation $L_\Pi$ is reserved here for the one-dimensional Mosco limit operator
@@ -620,9 +621,11 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
       of $\DeltaH$ at leading sub-Riemannian order.
       Its contribution enters via sub-principal terms and is responsible for the distinction
       between the topological dimension $3$ of $\HeisR$ and its Hausdorff dimension $\Dhom = 4$.
-      A complete 4D Lorentzian metric on $\mathbb{R}_\tau \times \HeisR$ requires an extension
-      of the symbol framework to incorporate the sub-Riemannian corrections from the
-      $z$-direction; this is deferred to open problem Q5b-O2.
+      The coefficient $A_z$ of the $z$-direction has since been established:
+      Q8~\cite{BeauQ8} proves $A_z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
+      resolving Q5b-O2 at the algebraic level.
+      The operator-theoretic sub-principal framework (Q5b-O2) provides an independent
+      derivation of this value within the hypoelliptic calculus.
       The Lorentzian signature result (Section~\ref{sec:lorentz}) applies to the non-degenerate
       part of the symbol and holds independently of this subtlety.
       Crucially, the effective four-dimensionality of the geometry arises from the homogeneous
@@ -688,7 +691,7 @@ Four signature classes must be excluded:
   elliptic operator.
   An elliptic operator in $(\tau, x, y, z)$ implies instantaneous propagation of
   perturbations across the relational network, contradicting the finite Born--Infeld
-  capacity bound $A_n^{\max} = c_\chi / \sqrt{\lambda_n}$~\cite{Beau2026fm,Beau2026c}.
+  capacity bound $A_n^{\max} = c_\chi / \sqrt{\lambda_n}$~\cite{Beau2026m,Beau2026c}.
   \item \textbf{Ultra-hyperbolic (two or more time-like directions)}: fails to admit a
   globally well-posed initial value problem and is excluded by spectral stability of the
   effective operator~\cite{Beau2026c}.
@@ -713,7 +716,7 @@ projective ordering along $\tau$, and (iv)~the bounded Born--Infeld admissibilit
 constraint, is the Lorentzian signature $(-,+,+,+)$.
 The detailed proof is established in~\cite{Beau2026c} Sections~5--6 and depends only
 on the bounded-flux constraint and spectral stability, both of which are present in the
-Foundation axioms~\cite{Beau2026fm}.
+Foundation axioms~\cite{Beau2026m}.
 After normalising the maximal admissible propagation speed to $c = 1$, the effective
 metric is dynamically fixed to $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in the
 homogeneous isotropic regime.
@@ -734,7 +737,7 @@ of the framework.
       The emergence of the Lorentzian structure is thus not postulated but results from
       the admissibility constraints governing the projection of unresolved configurations
       onto observable degrees of freedom — the same non-injective projection that generates
-      the Heisenberg symmetry group~\cite{Beau2026fm,Beau2026hs} and the BFS shell
+      the Heisenberg symmetry group~\cite{Beau2026m,Beau2026HeisenbergStructure} and the BFS shell
       structure~\cite{Cosmochrony}.
       This is the structural content of the claim in~\cite{Cosmochrony} that spacetime
       is a ``large-$q$ limit of the discrete observable space $\mathcal{O}$, with the
@@ -784,52 +787,48 @@ of the framework.
         Conditional on Thm.~\ref{thm:metric}, citing~\cite{Beau2026c} \\
         \hline
         Q5b-O1 & Prove [H-lift] via Plancherel decomposition &
-        Open \\
+        Resolved: Q9~\cite{Beau2026q9} \\
         Q5b-O2 & Extend metric to full $4\times 4$ with $z$-direction &
-        Open \\
+        Resolved: Q8~\cite{BeauQ8} ($A_z=2$) \\
         Q5b-O3 & Identify $A_\tau$, $A_H$ from admissibility data &
-        Open \\
+        Partial: $A_H=2$ (Q10~\cite{Beau2026q10}+U1~\cite{Beau2026u1}); $A_\tau$ open \\
         \hline
       \end{tabular}
     \end{center}
 
-  \subsection{Open problems}
+  \subsection{Resolved problems}
 
     \textbf{Q5b-O1} (Proof of [H-lift] via Plancherel decomposition).
-    Use the Plancherel formula for $\HeisR$, which decomposes $L^2(\HeisR)$ as a direct
-    integral $\int^\oplus_{\xi \neq 0} \mathcal{H}_\xi\,|\xi|\,d\xi$ of Schr\"{o}dinger
-    representation spaces $\mathcal{H}_\xi \cong L^2(\mathbb{R})$, to track how the
-    admissibility filter $\Pi_q$ acts on each fiber.
-    The key step is showing that $\Pi_q$ concentrates admissible modes on the kinetic
-    sector $\partial_k^2$ of $d\pi_\xi(\DeltaH)$, i.e., that the potential energy
-    $\|(2\pi\xi k)f\|^2$ of admissible functions $f = \Pi_q g$ is bounded by the
-    BI capacity envelope, making the kinetic sector dominant in the Mosco limit.
-    Expected difficulty: moderate, given T2 of Q5a.
+    Q9~\cite{Beau2026q9} proves hypothesis~[H-lift] via generator suppression:
+    the admissibility filter $\Pi_q$ concentrates on the kinetic sector of
+    $d\pi_\xi(\DeltaH)$ unconditionally, making the Mosco lift to $L_{\mathrm{eff}}$
+    a theorem rather than a hypothesis.
+    Theorem~\ref{thm:metric} is therefore unconditional with respect to~[H-lift].
+    The original Plancherel approach outlined here remains of independent interest
+    as an alternative derivation.
 
     \textbf{Q5b-O2} (Extension to a full $4 \times 4$ Lorentzian metric).
-    Theorem~\ref{thm:metric} and the signature argument of Theorem~\ref{thm:lorentz}
-    concern only the non-degenerate part of the sub-Riemannian symbol.
-    A complete treatment requires incorporating the $z$-direction, which enters the
-    effective metric through sub-principal corrections.
-    The natural framework is the theory of hypoelliptic operators and Beals--Greiner
-    calculus, or alternatively the tangent groupoid construction for sub-Riemannian
-    spaces.
-    A full $4 \times 4$ Lorentzian metric on $\mathbb{R}_\tau \times \HeisR$ would
-    require showing that the $z$-correction is positive-definite and contributes a
-    third spatial direction to the effective geometry.
-    Expected difficulty: hard; requires analysis of the sub-principal symbol of
-    $L_{\mathrm{eff}}$.
+    Q8~\cite{BeauQ8} establishes $A_z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity
+    on $\mathrm{Sym}^2(V_\rho)$ (Q7~\cite{Beau2026q7}): the $\mathfrak{su}(2)$ Casimir
+    acts as $2\cdot\mathrm{Id}$ on the spin-$1$ module $\mathrm{Sym}^2(V_\rho)$,
+    and this value is inherited by the $z$-direction coefficient of $L_{\mathrm{eff}}$.
+    Combined with $A_H = 2$ (Q5b-O3 below), the effective co-metric is thus
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$, with only $A_\tau$ remaining.
+    The operator-theoretic sub-principal framework (Beals--Greiner calculus, tangent
+    groupoid) remains of independent interest as a derivation from within the PDE calculus.
 
-    \textbf{Q5b-O3} (Identification of $A_\tau$ and $A_H$ from admissibility data).
-    Theorem~\ref{thm:metric} introduces two positive constants $A_\tau$ and $A_H$
-    characterising the temporal and spatial sectors of $L_{\mathrm{eff}}$.
-    Their identification from the admissibility data would require: expressing $A_H$
-    in terms of the Born--Infeld saturation constant $c_\chi$ and the spectral weight
-    $A$ of Q5a (see Q5a-O5); and expressing $A_\tau$ in terms of the projective
-    temporal ordering data from~\cite{Beau2026pto}.
-    This identification is the first step toward an explicit metric from first principles
-    and connects naturally to the Schwarzschild exterior solution derived
-    in~\cite{Beau2026c} Section~7.
+  \subsection{Remaining open problem}
+
+    \textbf{Q5b-O3} (Identification of $A_\tau$ from admissibility data).
+    The identification $A_H = 2$ has been established by Q10~\cite{Beau2026q10} via
+    the spectral universality hypothesis~[U] proved in U1~\cite{Beau2026u1}:
+    the admissibility weight satisfies $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$
+    (confirmed numerically for $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}),
+    giving $A_H = 2$ in the $C_q$ normalisation.
+    The single remaining open question is the identification of $A_\tau$ in terms of
+    the projective temporal ordering data from~\cite{Beau2026pto}.
+    This is the sole scalar needed for a fully explicit metric
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$ from first principles.
 
     The emergence of Lorentzian geometry established in this paper is thus traced back
     entirely to admissibility constraints on projected spectral data, rather than to
