@@ -60,15 +60,20 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     $\HeisR$; the homogeneous dimension $\Dhom = 4$ (Bass--Guivarc'h) endows the limiting
     geometry with the spectral and volume-growth properties of a four-dimensional space
     (Theorem~\ref{thm:carnot}).
-    Second, under an explicit lifting hypothesis~[H-lift], we identify $\LPi$ as the
-    image, under the Schr\"{o}dinger representation, of the kinetic sector of the sub-Riemannian
-    Laplacian $\DeltaH$ on $\HeisR$, and extract an effective contravariant co-metric tensor
-    from the principal symbol
-    $g^{\mu\nu} \propto A^{\mu\nu}$ from the principal symbol of the full effective operator
-    (Theorem~\ref{thm:metric}).
+    Second, we identify $\LPi$ as the image, under the Schr\"{o}dinger representation,
+    of the kinetic sector of the sub-Riemannian Laplacian $\DeltaH$ on $\HeisR$,
+    and extract an effective co-metric tensor from the principal symbol of the full
+    effective operator (Theorem~\ref{thm:metric}).
+    The lifting hypothesis~[H-lift] on which this result was originally conditional
+    has since been proved in Q9~\cite{Beau2026q9}, making Theorem~\ref{thm:metric}
+    unconditional.
+    The metric coefficients have since been determined: $A_H = 2$ by
+    Q10~\cite{Beau2026q10} and $A_z = 2$ by Q8~\cite{BeauQ8}, giving
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$ with $A_\tau$ the sole
+    remaining open quantity.
     Third, the Born--Infeld admissibility constraint forces this metric to carry Lorentzian
     signature $(-,+,+,+)$ (Theorem~\ref{thm:lorentz}, following~\cite{Beau2026c}).
-    Each result is given with an explicit status: structural, conditional on [H-lift], or
+    Each result is given with an explicit status: structural, unconditional (Q9), or
     imported from~\cite{Beau2026c}.
   \end{abstract}
 
@@ -134,8 +139,9 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     groups (Pansu~\cite{Pansu1989}) and does not require any new hypothesis.
 
     \medskip
-    \noindent\textbf{Metric extraction (Theorem~\ref{thm:metric}; conditional on [H-lift]).}
-    Under Hypothesis~[H-lift] (Definition~\ref{hyp:lift}), $\LPi = -A\partial_x^2$ is
+    \noindent\textbf{Metric extraction (Theorem~\ref{thm:metric}; proved unconditionally
+  via Q9~\cite{Beau2026q9}).}
+    Under Hypothesis~[H-lift] (Definition~\ref{hyp:lift}, proved in Q9), $\LPi = -A\partial_x^2$ is
     the image, under the Schr\"{o}dinger representation, of the kinetic sector of the
     sub-Riemannian Laplacian $\DeltaH = \tilde X^2 + \tilde Y^2$ on $\HeisR$, restricted
     to the admissible sector.
@@ -378,8 +384,8 @@ tested primes.
     acting on $L^2(\mathbb{R})$.
     Bridging these two objects is the central open step of this paper: we identify the
     natural candidate for this bridge (the Schr\"{o}dinger representation), formulate a
-    precise hypothesis [H-lift] in Section~\ref{ssec:hlift}, and give structural evidence;
-    but we do not prove [H-lift] here.
+    precise hypothesis [H-lift] in Section~\ref{ssec:hlift}, and give structural evidence.
+    Hypothesis~[H-lift] has since been proved in Q9~\cite{Beau2026q9}.
 
     The connection between $\DeltaH$ and one-dimensional operators runs through the
     Schr\"{o}dinger representation.
@@ -614,6 +620,15 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
       giving a three-dimensional pseudo-Riemannian symbol at leading order.
     \end{theorem}
 
+    \begin{remark}[Unconditional status via Q9]
+      \label{rem:q9lift}
+      Hypothesis~[H-lift] was the sole conditional input of Theorem~\ref{thm:metric}.
+      It has since been proved in Q9~\cite{Beau2026q9} via generator suppression,
+      making Theorem~\ref{thm:metric} unconditional (subject only to the Q5a hypotheses
+      \textrm{[H1]}, \textrm{[H-w]}, \textrm{[H-E1]}, \textrm{[C]}, which are
+      themselves structural properties of the admissibility filter).
+    \end{remark}
+
     \begin{remark}[Status of the $z$-direction]
       \label{rem:zdirection}
       The sub-Riemannian symbol~\eqref{eq:symbol-sublaplacian} is degenerate in $k_z$:
@@ -782,7 +797,7 @@ of the framework.
         {[H-lift]} & $\LPi$ is kinetic sector of $d\pi_1(\DeltaH)$ &
         Hypothesis (Open: Q5b-O1) \\
         Thm.~\ref{thm:metric} & Metric tensor $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
-        Conditional on [H-lift]\,+\,Q5a \\
+        Unconditional (Q9~\cite{Beau2026q9}\,+\,Q5a) \\
         Thm.~\ref{thm:lorentz} & Lorentzian signature $(-,+,+,+)$ &
         Conditional on Thm.~\ref{thm:metric}, citing~\cite{Beau2026c} \\
         \hline
