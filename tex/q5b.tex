@@ -759,7 +759,7 @@ of the framework.
       four-dimensional structure inherited from the homogeneous dimension of $G_q$.''
     \end{remark}
 
-  \section{Status Table and Problem Resolution}
+  \section{Status Table and Ancillary Questions}
   \label{sec:status}
 
   \subsection{Status table}
@@ -811,7 +811,10 @@ of the framework.
       \end{tabular}
     \end{center}
 
-  \subsection{Resolved problems}
+  \subsection{Ancillary questions and their resolution}
+
+    Three questions arising naturally from the results of this paper lay outside its
+    scope; they were addressed by companion papers and are recorded here for completeness.
 
     \textbf{Q5b-O1} (Proof of [H-lift] via Plancherel decomposition).
     Q9~\cite{Beau2026q9} proves hypothesis~[H-lift] via generator suppression:
@@ -827,39 +830,31 @@ of the framework.
     on $\mathrm{Sym}^2(V_\rho)$ (Q7~\cite{Beau2026q7}): the $\mathfrak{su}(2)$ Casimir
     acts as $2\cdot\mathrm{Id}$ on the spin-$1$ module $\mathrm{Sym}^2(V_\rho)$,
     and this value is inherited by the $z$-direction coefficient of $L_{\mathrm{eff}}$.
-    Combined with $A_H = 2$ (Q5b-O3, resolved in Q11~\cite{Beau2026q11}), the effective
-    co-metric is $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$;
-    $A_\tau = 2$ is subsequently established in Q11~\cite{Beau2026q11},
-    closing the metric to $g^{\mu\nu} = 2\,\eta^{\mu\nu}$.
+    Combined with $A_H = 2$ (resolved below), the effective co-metric takes the form
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$.
     The operator-theoretic sub-principal framework (Beals--Greiner calculus, tangent
     groupoid) remains of independent interest as a derivation from within the PDE calculus.
 
-    \textbf{Q5b-O3} (Identification of $A_\tau$ from admissibility data).
+    \textbf{Q5b-O3} (Identification of $A_\tau$ and $A_H$ from admissibility data).
     \label{ssec:resolved-o3}
-    The identification $A_H = 2$ was established by Q10~\cite{Beau2026q10} via
-    the spectral universality hypothesis~[U] proved in U1~\cite{Beau2026u1}:
-    the admissibility weight satisfies $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$
-    (confirmed numerically for $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}),
-    giving $A_H = 2$ in the $C_q$ normalisation.
-    The identification of $A_\tau = 2$ is established in Q11~\cite{Beau2026q11}
-    via a cascade internalisation lemma: the derivative $\partial_\tau$ is the continuum
-    limit of the cascade increment operator $T : \sigma_c(n) \mapsto \sigma_c(n+1)$
-    by the Carnot--Carath\'eodory convergence of Theorem~\ref{thm:carnot}.
-    The SU(2)-equivariance of $T$ under~[U] then forces, by Schur's lemma and the
-    Casimir normalisation of Q8~\cite{BeauQ8},
+    Q10~\cite{Beau2026q10} establishes $A_H = 2$ via the spectral universality
+    hypothesis~[U] proved in U1~\cite{Beau2026u1}: the admissibility weight satisfies
+    $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$ (confirmed numerically for
+    $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}).
+    Q11~\cite{Beau2026q11} subsequently identifies $A_\tau = 2$ via a cascade
+    internalisation lemma: $\partial_\tau$ is the continuum limit of the cascade
+    increment operator $T : \sigma_c(n) \mapsto \sigma_c(n+1)$ by
+    Theorem~\ref{thm:carnot}, and SU(2)-equivariance of $T$ under~[U] forces,
+    by Schur's lemma and the Casimir normalisation of Q8~\cite{BeauQ8},
     \[
       A_\tau = C_{\mathfrak{su}(2)}\big|_{\mathrm{Sym}^2(V_\rho)} = 2.
     \]
-    Open problem Q5b-O3 is therefore closed.
-    The effective co-metric is uniquely determined with no free parameter:
+    The effective co-metric is therefore uniquely determined with no free parameter:
     \[
       g^{\mu\nu} = 2\,\eta^{\mu\nu}, \qquad \eta = \mathrm{diag}(-1,+1,+1,+1).
     \]
-
-    The emergence of Lorentzian geometry established in this paper is thus traced back
-    entirely to admissibility constraints on projected spectral data, rather than to
-    any fundamental geometric postulate; spacetime structure is a derived consequence
-    of the non-injective projection, not an input.
+    Spacetime structure is a derived consequence of the non-injective projection,
+    not an input.
 
   \section*{Acknowledgements}
 
@@ -868,6 +863,6 @@ of the framework.
   this manuscript.
 
   \bibliographystyle{plain}
-  \bibliography{cosmochrony-bibliography,q5b_supplement}
+  \bibliography{cosmochrony-bibliography,external-refs}
 
 \end{document}
