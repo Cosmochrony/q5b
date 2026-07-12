@@ -1,8 +1,8 @@
 # Q5b — BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry
 
 This repository contains the source of the **Q5b Cosmochrony paper**
-[*BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian
-Geometry*](out/q5b.pdf).
+*BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian
+Geometry*.
 
 The companion paper Q5a establishes, conditionally, that the admissibility forms
 $\mathcal{E}_q$ on the Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q)$ converge in the
@@ -42,7 +42,6 @@ q5b/
 
 ## Links
 
-- 📄 [Paper PDF](out/q5b.pdf)
 - 🔗 DOI: [10.5281/zenodo.19686700](https://doi.org/10.5281/zenodo.19686700)
 - 🌐 Website: https://cosmochrony.org/science/emergent-geometry/q5/b/
 
