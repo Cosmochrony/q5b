@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata from this file."
+title: "BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry"
+type: software
+authors:
+  - family-names: "Beau"
+    given-names: "Jérôme"
+repository-code: "https://github.com/Cosmochrony/q5b"
+url: "https://cosmochrony.org/science/emergent-geometry/q5/b/"
+version: "1.2.1"
+doi: "10.5281/zenodo.19686700"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: article
+  title: "BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry"
+  authors:
+    - family-names: "Beau"
+      given-names: "Jérôme"
+  year: 2026
+  doi: "10.5281/zenodo.19686700"
+  url: "https://doi.org/10.5281/zenodo.19686700"
