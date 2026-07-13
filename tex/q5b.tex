@@ -67,10 +67,10 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     The lifting hypothesis~[H-lift] on which this result was originally conditional
     has since been proved in Q9~\cite{Beau2026q9}, making Theorem~\ref{thm:metric}
     unconditional.
-    The metric coefficients have since been determined: $A_H = 2$ by
-    Q10~\cite{Beau2026q10} and $A_z = 2$ by Q8~\cite{BeauQ8}, giving
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$ with $A_\tau$ the sole
-    remaining open quantity.
+    The metric coefficients have since been fully determined: $A_H = 2$ by
+    Q10~\cite{Beau2026q10}, $A_z = 2$ by Q8~\cite{BeauQ8}, and $A_\tau = 2$ by
+    Q11~\cite{Beau2026q11}, giving the isotropic Lorentzian co-metric
+    $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no remaining free parameter.
     Third, the Born--Infeld admissibility constraint forces this metric to carry Lorentzian
     signature $(-,+,+,+)$ (Theorem~\ref{thm:lorentz}, following~\cite{Beau2026c}).
     Each result is given with an explicit status: structural, unconditional (Q9), or
@@ -429,8 +429,8 @@ tested primes.
       \item The potential term $(2\pi\xi)^2 k^2$ contributes at energy scale
       $(2\pi\xi)^2 \langle k^2 \rangle$, which is suppressed relative to the kinetic term
       $\|\partial_k f\|^2$ for admissible functions whose $k$-spread is bounded by
-      $A_n^{\max} = c_\chi / \sqrt{\lambda_n}$ (BI admissibility envelope).
-      \item In the admissible sector, $\langle k^2 \rangle \lesssim (c_\chi)^2 / \lambda_{\min}$
+      $A_n^{\max} = c_{\mathrm{BI}} / \sqrt{\lambda_n}$ (BI admissibility envelope).
+      \item In the admissible sector, $\langle k^2 \rangle \lesssim (c_{\mathrm{BI}})^2 / \lambda_{\min}$
       is uniformly bounded, while the kinetic energy $\|\partial_k f\|^2$ grows with
       the number of independent Weil fingerprints.
     \end{itemize}
@@ -706,7 +706,7 @@ Four signature classes must be excluded:
   elliptic operator.
   An elliptic operator in $(\tau, x, y, z)$ implies instantaneous propagation of
   perturbations across the relational network, contradicting the finite Born--Infeld
-  capacity bound $A_n^{\max} = c_\chi / \sqrt{\lambda_n}$~\cite{Beau2026m,Beau2026c}.
+  capacity bound $A_n^{\max} = c_{\mathrm{BI}} / \sqrt{\lambda_n}$~\cite{Beau2026m,Beau2026c}.
   \item \textbf{Ultra-hyperbolic (two or more time-like directions)}: fails to admit a
   globally well-posed initial value problem and is excluded by spectral stability of the
   effective operator~\cite{Beau2026c}.
@@ -759,7 +759,7 @@ of the framework.
       four-dimensional structure inherited from the homogeneous dimension of $G_q$.''
     \end{remark}
 
-  \section{Status Table and Open Problems}
+  \section{Status Table and Ancillary Questions}
   \label{sec:status}
 
   \subsection{Status table}
@@ -806,12 +806,15 @@ of the framework.
         Q5b-O2 & Extend metric to full $4\times 4$ with $z$-direction &
         Resolved: Q8~\cite{BeauQ8} ($A_z=2$) \\
         Q5b-O3 & Identify $A_\tau$, $A_H$ from admissibility data &
-        Partial: $A_H=2$ (Q10~\cite{Beau2026q10}+U1~\cite{Beau2026u1}); $A_\tau$ open \\
+        Resolved: Q11~\cite{Beau2026q11} ($A_\tau = 2$; see \S\ref{ssec:resolved-o3}) \\
         \hline
       \end{tabular}
     \end{center}
 
-  \subsection{Resolved problems}
+  \subsection{Ancillary questions and their resolution}
+
+    Three questions arising naturally from the results of this paper lay outside its
+    scope; they were addressed by companion papers and are recorded here for completeness.
 
     \textbf{Q5b-O1} (Proof of [H-lift] via Plancherel decomposition).
     Q9~\cite{Beau2026q9} proves hypothesis~[H-lift] via generator suppression:
@@ -827,28 +830,31 @@ of the framework.
     on $\mathrm{Sym}^2(V_\rho)$ (Q7~\cite{Beau2026q7}): the $\mathfrak{su}(2)$ Casimir
     acts as $2\cdot\mathrm{Id}$ on the spin-$1$ module $\mathrm{Sym}^2(V_\rho)$,
     and this value is inherited by the $z$-direction coefficient of $L_{\mathrm{eff}}$.
-    Combined with $A_H = 2$ (Q5b-O3 below), the effective co-metric is thus
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$, with only $A_\tau$ remaining.
+    Combined with $A_H = 2$ (resolved below), the effective co-metric takes the form
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$.
     The operator-theoretic sub-principal framework (Beals--Greiner calculus, tangent
     groupoid) remains of independent interest as a derivation from within the PDE calculus.
 
-  \subsection{Remaining open problem}
-
-    \textbf{Q5b-O3} (Identification of $A_\tau$ from admissibility data).
-    The identification $A_H = 2$ has been established by Q10~\cite{Beau2026q10} via
-    the spectral universality hypothesis~[U] proved in U1~\cite{Beau2026u1}:
-    the admissibility weight satisfies $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$
-    (confirmed numerically for $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}),
-    giving $A_H = 2$ in the $C_q$ normalisation.
-    The single remaining open question is the identification of $A_\tau$ in terms of
-    the projective temporal ordering data from~\cite{Beau2026pto}.
-    This is the sole scalar needed for a fully explicit metric
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$ from first principles.
-
-    The emergence of Lorentzian geometry established in this paper is thus traced back
-    entirely to admissibility constraints on projected spectral data, rather than to
-    any fundamental geometric postulate; spacetime structure is a derived consequence
-    of the non-injective projection, not an input.
+    \textbf{Q5b-O3} (Identification of $A_\tau$ and $A_H$ from admissibility data).
+    \label{ssec:resolved-o3}
+    Q10~\cite{Beau2026q10} establishes $A_H = 2$ via the spectral universality
+    hypothesis~[U] proved in U1~\cite{Beau2026u1}: the admissibility weight satisfies
+    $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$ (confirmed numerically for
+    $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}).
+    Q11~\cite{Beau2026q11} subsequently identifies $A_\tau = 2$ via a cascade
+    internalisation lemma: $\partial_\tau$ is the continuum limit of the cascade
+    increment operator $T : \sigma_c(n) \mapsto \sigma_c(n+1)$ by
+    Theorem~\ref{thm:carnot}, and SU(2)-equivariance of $T$ under~[U] forces,
+    by Schur's lemma and the Casimir normalisation of Q8~\cite{BeauQ8},
+    \[
+      A_\tau = C_{\mathfrak{su}(2)}\big|_{\mathrm{Sym}^2(V_\rho)} = 2.
+    \]
+    The effective co-metric is therefore uniquely determined with no free parameter:
+    \[
+      g^{\mu\nu} = 2\,\eta^{\mu\nu}, \qquad \eta = \mathrm{diag}(-1,+1,+1,+1).
+    \]
+    Spacetime structure is a derived consequence of the non-injective projection,
+    not an input.
 
   \section*{Acknowledgements}
 
@@ -857,6 +863,6 @@ of the framework.
   this manuscript.
 
   \bibliographystyle{plain}
-  \bibliography{cosmochrony-bibliography,q5b_supplement}
+  \bibliography{cosmochrony-bibliography,external-refs}
 
 \end{document}
