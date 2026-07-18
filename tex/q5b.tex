@@ -71,10 +71,11 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     Q10~\cite{Beau2026q10}, $A_z = 2$ by Q8~\cite{BeauQ8}, and $A_\tau = 2$ by
     Q11~\cite{Beau2026q11}, giving the isotropic Lorentzian co-metric
     $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no remaining free parameter.
-    Third, the Born--Infeld admissibility constraint forces this metric to carry Lorentzian
-    signature $(-,+,+,+)$ (Theorem~\ref{thm:lorentz}, following~\cite{Beau2026c}).
+    Third, the Born--Infeld admissibility constraint conditionally selects the Lorentzian
+    signature $(-,+,+,+)$ for this metric (Theorem~\ref{thm:lorentz}), the import being
+    conditional on the hyperbolicity hypothesis of~\cite{Beau2026c} ([H-hyp]).
     Each result is given with an explicit status: structural, unconditional (Q9), or
-    imported from~\cite{Beau2026c}.
+    conditional, imported from~\cite{Beau2026c}.
   \end{abstract}
 
   \paragraph{Keywords.}
@@ -151,9 +152,10 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
 
     \medskip
     \noindent\textbf{Lorentzian signature (Theorem~\ref{thm:lorentz}; conditional on T5 and
-  citing~\cite{Beau2026c}).}
-    The Born--Infeld admissibility constraint forces $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$
-    in homogeneous isotropic admissible regimes.
+  on the hyperbolicity hypothesis of~\cite{Beau2026c}).}
+    The Born--Infeld admissibility constraint, together with the hyperbolicity
+    hypothesis [H-hyp] of~\cite{Beau2026c}, selects
+    $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in homogeneous isotropic admissible regimes.
 
   \subsection{Notation and conventions}
 
@@ -523,8 +525,9 @@ tested primes.
     where $A_\tau > 0$ is the effective temporal coefficient from the projective ordering
     structure~\cite{Beau2026pto} and $A_H > 0$ is the spatial coefficient from [H-lift]
     (related to the constant $A$ in $\LPi = -A\partial_x^2$).
-    The sign structure in~\eqref{eq:leff} reflects the hyperbolic character forced by
-    Born--Infeld admissibility (Section~\ref{sec:lorentz}).
+    The sign structure in~\eqref{eq:leff} reflects the hyperbolic character selected,
+    conditionally on the hyperbolicity hypothesis of~\cite{Beau2026c}, in
+    Section~\ref{sec:lorentz}.
 
     \begin{remark}[Relation to the 1D shadow and naming convention]
 On the spatial slice $\{\tau = \text{const}\}$, the operator $L_{\mathrm{eff}}$ reduces to
@@ -578,7 +581,7 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
     \]
     is the \emph{horizontal co-metric tensor} of the sub-Riemannian structure.
     The full symbol of $L_{\mathrm{eff}}$ adds the temporal direction with a negative
-    coefficient $-A_\tau$, consistently with the hyperbolic structure required
+    coefficient $-A_\tau$, consistently with the hyperbolic structure hypothesised
     in Section~\ref{sec:lorentz}:
     \begin{equation}
       g^{\mu\nu}(p) = \mathrm{diag}(-A_\tau) \oplus A_H \cdot A^{ij}_H(p).
@@ -678,38 +681,46 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
 
   \subsection{The signature selection argument}
 
-    The following theorem is a consequence of the Born--Infeld analysis of~\cite{Beau2026c}.
-    It is imported from that paper and adapted to the present geometric setting;
+    The following theorem imports the conditional signature-selection analysis
+    of~\cite{Beau2026c}, adapted to the present geometric setting;
     no independent proof is given here.
-    We state it for completeness and give the main lines of argument to make the paper
-    self-contained.
+    In~\cite{Beau2026c}, the capacity bound is an explicit axiom [A-cap] and the signature
+    selection is conditional on a second-order hyperbolicity hypothesis [H-hyp]:
+    the capacity bound alone does not force hyperbolicity (flux-limited diffusion is a
+    counterexample).
+    We state the result for completeness and give the main lines of argument to make the
+    paper self-contained.
 
-    \begin{theorem}[Lorentzian signature; conditional on Theorem~\ref{thm:metric},
-      citing~{\cite{Beau2026c}}]
+    \begin{theorem}[Lorentzian signature; conditional on Theorem~\ref{thm:metric} and on
+      the hyperbolicity hypothesis {[H-hyp]} of~{\cite{Beau2026c}}]
       \label{thm:lorentz}
-      In homogeneous and quasi-isotropic admissible regimes, the Born--Infeld admissibility
-      constraint forces the effective metric defined by~\eqref{eq:op-metric} to have Lorentzian
-      signature $(-,+,+,+)$.
+      In homogeneous and quasi-isotropic admissible regimes, and under the hyperbolicity
+      hypothesis [H-hyp] of~\cite{Beau2026c}, the Born--Infeld admissibility
+      constraint selects the Lorentzian signature $(-,+,+,+)$ for the effective metric
+      defined by~\eqref{eq:op-metric}.
     \end{theorem}
 
-    \begin{proof}[Proof sketch, following~{\cite{Beau2026c}} Sections~5--6]
-The operator $L_{\mathrm{eff}}$ must define a well-posed initial value problem in the
-projective ordering variable $\tau$; this is required by the structural stability of
-the admissibility cascade~\cite{Beau2026pto,Cosmochrony}.
-The principal symbol $g^{\mu\nu} k_\mu k_\nu$ determines the propagation properties
-of effective modes in the continuum limit, so $g^{\mu\nu}$ must be compatible with
-hyperbolicity in the sense of H\"{o}rmander.
+    \begin{proof}[Proof sketch, following the conditional analysis of~{\cite{Beau2026c}}]
+The hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c} posits that the operator
+$L_{\mathrm{eff}}$ defines a second-order, well-posed initial value problem in the
+projective ordering variable $\tau$; this is an explicit hypothesis, motivated by the
+structural stability of the admissibility cascade~\cite{Beau2026pto,Cosmochrony}, and
+is not itself a consequence of the capacity bound.
+Under [H-hyp], the principal symbol $g^{\mu\nu} k_\mu k_\nu$ determines the propagation
+properties of effective modes in the continuum limit, so $g^{\mu\nu}$ must be compatible
+with hyperbolicity in the sense of H\"{o}rmander.
 
 Four signature classes must be excluded:
 \begin{enumerate}
   \item \textbf{Riemannian $(+,+,+,+)$}: produces a positive-definite symbol, hence an
   elliptic operator.
-  An elliptic operator in $(\tau, x, y, z)$ implies instantaneous propagation of
-  perturbations across the relational network, contradicting the finite Born--Infeld
-  capacity bound $A_n^{\max} = c_{\mathrm{BI}} / \sqrt{\lambda_n}$~\cite{Beau2026m,Beau2026c}.
+  An elliptic operator in $(\tau, x, y, z)$ admits no finite characteristic cone, hence
+  implies instantaneous propagation of perturbations across the relational network,
+  contradicting the finite capacity bound [A-cap]
+  $A_n^{\max} = c_{\mathrm{BI}} / \sqrt{\lambda_n}$~\cite{Beau2026m,Beau2026c}.
   \item \textbf{Ultra-hyperbolic (two or more time-like directions)}: fails to admit a
-  globally well-posed initial value problem and is excluded by spectral stability of the
-  effective operator~\cite{Beau2026c}.
+  globally well-posed initial value problem (Hadamard ill-posedness) and is excluded under
+  the hyperbolicity hypothesis of~\cite{Beau2026c}.
   \item \textbf{Degenerate (rank $< 4$)}: excluded at the level of the effective
   metric after incorporation of sub-principal corrections.
   The leading sub-Riemannian principal symbol is degenerate in the central direction
@@ -726,30 +737,33 @@ Four signature classes must be excluded:
   of~\cite{Beau2026pto}.
 \end{enumerate}
 The unique remaining signature compatible with (i)~hyperbolicity of
-$\sigma_2(L_{\mathrm{eff}})$, (ii)~a finite characteristic cone, (iii)~monotonic
-projective ordering along $\tau$, and (iv)~the bounded Born--Infeld admissibility
-constraint, is the Lorentzian signature $(-,+,+,+)$.
-The detailed proof is established in~\cite{Beau2026c} Sections~5--6 and depends only
-on the bounded-flux constraint and spectral stability, both of which are present in the
-Foundation axioms~\cite{Beau2026m}.
+$\sigma_2(L_{\mathrm{eff}})$ (hypothesis [H-hyp]), (ii)~a finite characteristic cone,
+(iii)~monotonic projective ordering along $\tau$, and (iv)~the bounded Born--Infeld
+admissibility constraint, is the Lorentzian signature $(-,+,+,+)$.
+The selection argument is given in~\cite{Beau2026c}, conditionally on its hyperbolicity
+hypothesis, and depends, beyond that hypothesis, only on the capacity bound [A-cap]
+of~\cite{Beau2026c}, whose bounded-flux content is present in the Foundation
+axioms~\cite{Beau2026m}.
 After normalising the maximal admissible propagation speed to $c = 1$, the effective
-metric is dynamically fixed to $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in the
+metric is fixed to $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in the
 homogeneous isotropic regime.
-This selection mechanism is intrinsic to the admissibility constraints and does
-not rely on any external causal or geometric assumption introduced independently
-of the framework.
+Conditionally on [H-hyp], this selection mechanism uses only the admissibility
+constraints; the hyperbolicity hypothesis itself is an explicit assumption
+of~\cite{Beau2026c}, not derived from the capacity bound.
     \end{proof}
 
     \begin{remark}[Emergence, not postulation]
       \label{rem:emergence}
       The Lorentzian metric is not introduced as a background structure.
-      It is the unique pseudo-Riemannian structure compatible with:
+      Conditionally on the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c},
+      it is the unique pseudo-Riemannian structure compatible with:
       the Heisenberg group symmetry (giving $\Dhom = 4$),
       the projective ordering (giving the temporal direction $\tau$),
-      and the Born--Infeld admissibility bound (excluding all other signatures).
-      Minkowski geometry emerges as the unique stable effective description of a maximally
-      symmetric admissible regime.
-      The emergence of the Lorentzian structure is thus not postulated but results from
+      and the Born--Infeld admissibility bound (excluding the remaining signatures).
+      Under the same hypothesis, Minkowski geometry emerges as the stable effective
+      description of a maximally symmetric admissible regime.
+      The emergence of the Lorentzian structure is thus not postulated as a background,
+      but results, under [H-hyp], from
       the admissibility constraints governing the projection of unresolved configurations
       onto observable degrees of freedom — the same non-injective projection that generates
       the Heisenberg symmetry group~\cite{Beau2026m,Beau2026HeisenbergStructure} and the BFS shell
@@ -773,9 +787,10 @@ of the framework.
       hypothesis, supported by structural evidence from Q5a~T2 but not proved here.
       \item \textbf{Metric extraction} (Theorem~\ref{thm:metric}): structural consequence
       of [H-lift] together with the Q5a hypotheses [H1], [H-w], [H-E1], [C].
-      \item \textbf{Lorentzian signature} (Theorem~\ref{thm:lorentz}): derived from the
-      Born--Infeld admissibility analysis of~\cite{Beau2026c}, conditional on
-      Theorem~\ref{thm:metric}.
+      \item \textbf{Lorentzian signature} (Theorem~\ref{thm:lorentz}): imported from the
+      conditional signature-selection analysis of~\cite{Beau2026c}, conditional on
+      Theorem~\ref{thm:metric} and on the hyperbolicity hypothesis [H-hyp]
+      of~\cite{Beau2026c}.
     \end{itemize}
 
     \medskip
@@ -799,7 +814,7 @@ of the framework.
         Thm.~\ref{thm:metric} & Metric tensor $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
         Unconditional (Q9~\cite{Beau2026q9}\,+\,Q5a) \\
         Thm.~\ref{thm:lorentz} & Lorentzian signature $(-,+,+,+)$ &
-        Conditional on Thm.~\ref{thm:metric}, citing~\cite{Beau2026c} \\
+        Conditional on Thm.~\ref{thm:metric} and [H-hyp] of~\cite{Beau2026c} \\
         \hline
         Q5b-O1 & Prove [H-lift] via Plancherel decomposition &
         Resolved: Q9~\cite{Beau2026q9} \\
@@ -849,12 +864,14 @@ of the framework.
     \[
       A_\tau = C_{\mathfrak{su}(2)}\big|_{\mathrm{Sym}^2(V_\rho)} = 2.
     \]
-    The effective co-metric is therefore uniquely determined with no free parameter:
+    The coefficients of the effective co-metric are therefore uniquely determined with
+    no free parameter, and, conditionally on the hyperbolicity hypothesis [H-hyp]
+    of~\cite{Beau2026c} (Theorem~\ref{thm:lorentz}), the signature is Lorentzian:
     \[
       g^{\mu\nu} = 2\,\eta^{\mu\nu}, \qquad \eta = \mathrm{diag}(-1,+1,+1,+1).
     \]
-    Spacetime structure is a derived consequence of the non-injective projection,
-    not an input.
+    Spacetime structure is, under this hypothesis, a derived consequence of the
+    non-injective projection, not an input.
 
   \section*{Acknowledgements}
 
