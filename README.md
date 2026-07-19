@@ -4,11 +4,15 @@ This repository contains the source of the **Q5b Cosmochrony paper**
 *BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian
 Geometry*.
 
-The companion paper Q5a establishes, conditionally, that the admissibility forms
-$\mathcal{E}_q$ on the Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q)$ converge in the
-Mosco sense to a second-order operator $L_\Pi = -A\partial_x^2$ — the "one-dimensional
-operator-theoretic shadow" of the four-dimensional structure of $\mathrm{Heis}_3(\mathbb{R})$.
-This paper completes the geometric reading.
+**Status revision (version 2.0).** Version 3.0 of the companion paper Q5a withdraws its
+earlier derivation of a spatial limit operator $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$:
+the canonical filtration is exactly a growing toric Fourier window, the published
+admissibility form converges to the zero form on it, and no common scalar normalisation
+produces a non-trivial toric differential operator. The spatial input of this paper is
+therefore formalised as an explicit, unestablished hypothesis **[H-L]** (existence of the
+spatial limit operator), and every result consuming $L_\Pi$ is stated conditionally on it.
+The geometric convergence results (Carnot limit, $D_{\mathrm{hom}} = 4$) are independent of
+[H-L] and stand.
 
 ## Core Results
 
@@ -17,13 +21,15 @@ This paper completes the geometric reading.
    Carnot–Carathéodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous
    dimension $D_{\mathrm{hom}} = 4$ (Bass–Guivarc'h) gives the limiting geometry the spectral
    and volume-growth properties of a four-dimensional space.
-2. **Metric extraction**: $L_\Pi$ is the image, under the Schrödinger representation, of the
-   kinetic sector of the sub-Riemannian Laplacian $\Delta_H$; an effective co-metric is read
-   off the principal symbol of the effective operator.
+2. **Metric extraction (conditional on [H-L])**: under [H-L], $L_\Pi$ is the image, under
+   the Schrödinger representation, of the kinetic sector of the sub-Riemannian Laplacian
+   $\Delta_H$; an effective co-metric is read off the principal symbol of the effective
+   operator.
 
-The lifting hypothesis [H-lift], originally conditional here, has since been proved in Q9,
-making the metric result unconditional. The coefficients are now fully determined:
-$A_H = 2$ (Q10), $A_z = 2$ (Q8), $A_\tau = 2$ (Q11).
+The lifting hypothesis [H-lift] has been proved in Q9, so the conditionality of the metric
+result reduces to [H-L] alone. The coefficients are determined by companion papers:
+$A_H = 2$ (Q10), $A_z = 2$ (Q8), $A_\tau = 2$ (Q11) — all readings conditional on [H-L].
+Establishing [H-L], or replacing it, is the open content of Q5.
 
 ## Keywords
 
