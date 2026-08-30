@@ -1,11 +1,30 @@
 \documentclass[11pt,a4paper]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{geometry}
 \usepackage{doi}
 \geometry{margin=2.5cm}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Big math delimiters live in the LM math-extension font, whose glyphs carry no ToUnicode
+% mapping; without these entries \left(...\right) and \left[...\right] extract as control
+% characters and as the letters h and i respectively.
+\pdfglyphtounicode{parenleftbig}{0028}      \pdfglyphtounicode{parenrightbig}{0029}
+\pdfglyphtounicode{parenleftBig}{0028}      \pdfglyphtounicode{parenrightBig}{0029}
+\pdfglyphtounicode{parenleftbigg}{0028}     \pdfglyphtounicode{parenrightbigg}{0029}
+\pdfglyphtounicode{parenleftBigg}{0028}     \pdfglyphtounicode{parenrightBigg}{0029}
+\pdfglyphtounicode{bracketleftbig}{005B}    \pdfglyphtounicode{bracketrightbig}{005D}
+\pdfglyphtounicode{bracketleftBig}{005B}    \pdfglyphtounicode{bracketrightBig}{005D}
+\pdfglyphtounicode{bracketleftbigg}{005B}   \pdfglyphtounicode{bracketrightbigg}{005D}
+\pdfglyphtounicode{bracketleftBigg}{005B}   \pdfglyphtounicode{bracketrightBigg}{005D}
+\pdfglyphtounicode{braceleftbig}{007B}      \pdfglyphtounicode{bracerightbig}{007D}
+\pdfglyphtounicode{braceleftBig}{007B}      \pdfglyphtounicode{bracerightBig}{007D}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -49,7 +68,7 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
 
   \begin{abstract}
     Earlier versions of the companion paper Q5a claimed, conditionally, that the admissibility
-    forms $\Eq$ on the Weil representation of $\HeisZ$ converge in the Mosco sense to a
+    forms $\Eq$ on the Heisenberg carrier of $\HeisZ$ converge in the Mosco sense to a
     second-order operator $\LPi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
     Version 3.0 of Q5a withdraws that derivation: the canonical filtration of the admissible
     fibre is exactly a growing toric Fourier window, the published admissibility form converges
@@ -99,15 +118,21 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
 
   \subsection{Context and the status of the Q5a input}
 
-    On a \emph{supplied} Heisenberg carrier, the symmetry group of the admissible fibre $F_n$ is
-    $\HeisZ$ for a prime $q$, and $F_n$ carries the Weil representation
-    $V_\rho$ on $L^2(\mathbb{Z}/q\mathbb{Z})$.
-    That carrier is supplied rather than selected: the admissibility axioms force irreducibility and
+    Three data must be distinguished, and this paper supplies rather than derives each of them.
+    The finite group $\HeisZ$ for a prime $q$ is stipulated in the notation conventions below and
+    used throughout.
+    A Heisenberg carrier for it --- the Heisenberg--Schr\"odinger representation $\pi_c$ on
+    $\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})$ at a fixed non-trivial central character --- is a
+    supplied input, and identifying the admissible fibre $F_n$ with $\mathcal{H}_c$ is a modelling
+    dictionary rather than a theorem.
+    The associated Weil action, the representation of the symplectic automorphism group of the same
+    carrier, is a \emph{further} datum again; it is not needed for any result below.
+    None of this is selected by the admissibility axioms: they force irreducibility and
     non-commutation, but neither make the commutator central nor single out a finite Heisenberg
     group, an explicit $\mathfrak{S}_3$ countermodel satisfying the extracted carrier
     contract~\cite{Beau2026m,Beau2026HeisenbergStructure}.
-    The present paper stipulates the group in its notation conventions and works on it throughout,
-    so none of its results depends on how the carrier is obtained.
+    Since the group is stipulated and the geometry below is that of $\HeisR$, no result of this paper
+    depends on how the carrier is obtained.
     The Cosmochrony white paper~\cite{Cosmochrony} identifies three qualitative convergences
     expected to hold in the large-$q$ limit:
     \begin{enumerate}
@@ -120,7 +145,7 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     \end{enumerate}
     The companion paper Q5a~\cite{Beau2026q5a} addresses convergences (i) and (iii).
     Its earlier versions claimed, conditionally, a Hilbert inductive limit, convergence of
-    rescaled Weil generators to metaplectic generators, and Mosco convergence of the
+    rescaled Heisenberg generators to metaplectic generators, and Mosco convergence of the
     admissibility forms $\Eq$ to a second-order operator $\LPi = -A\partial_x^2$ on
     $L^2(\mathbb{R})$, and deferred the geometric reading of $\LPi$ to the present paper.
     Version 3.0 of Q5a withdraws that derivation.
@@ -448,8 +473,10 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
       \item $\partial_k^2$: the \emph{kinetic} sector, acting purely as $-(-\partial_k^2)$;
       \item $-(2\pi\xi)^2 k^2$: the \emph{potential} sector, growing with $k^2$.
     \end{itemize}
-    The operator $\LPi = -A\partial_x^2$ produced by Q5a corresponds to (a multiple of)
+    The operator $\LPi = -A\partial_x^2$ posited by Hypothesis~[H-L] corresponds to (a multiple of)
     the kinetic sector, in the variable $k \equiv x$.
+    It is not produced by Q5a: version 3.0 of that paper withdrew the Mosco derivation, so $\LPi$
+    enters here only through~[H-L]~\cite{Beau2026q5a}.
 
   \subsection{Admissibility filter and sector dominance}
 
@@ -502,7 +529,7 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
       Hypothesis~[H-lift] is supported by three structural observations:
       \begin{enumerate}
         \item Earlier versions of Q5a claimed (T2; withdrawn in version 3.0) that the
-        rescaled Weil generators $\hat X_q / \sqrt{q}$, $\hat Y_q / \sqrt{q}$ converge
+        rescaled Heisenberg generators $\hat X_q / \sqrt{q}$, $\hat Y_q / \sqrt{q}$ converge
         strongly to the metaplectic generators $d\pi_1(\tilde X) = \partial_k$ and
         $d\pi_1(\tilde Y) = ik$, which are precisely the generators entering $\DeltaH$
         via~\eqref{eq:generators-rep}; this is retained here as structural motivation only.
