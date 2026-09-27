@@ -52,8 +52,8 @@
 \newcommand{\BI}{\mathrm{BI}}
 \newcommand{\Dhom}{D_{\mathrm{hom}}}
 
-\title{BFS Shell Stratification and the Emergence of\\
-Four-Dimensional Lorentzian Geometry\\[6pt]
+\title{Toward Four-Dimensional Lorentzian Geometry\\
+from BFS Shell Stratification\\[6pt]
 {\large Q5b of the Cosmochrony Spectral Geometry Programme}}
 
 \author{J\'{e}r\^{o}me Beau\\[4pt]
@@ -67,41 +67,35 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
   \maketitle
 
   \begin{abstract}
-    Earlier versions of the companion paper Q5a claimed, conditionally, that the admissibility
-    forms $\Eq$ on the Heisenberg carrier of $\HeisZ$ converge in the Mosco sense to a
-    second-order operator $\LPi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
-    Version 3.0 of Q5a withdraws that derivation: the canonical filtration of the admissible
-    fibre is exactly a growing toric Fourier window, the published admissibility form converges
-    to the zero form on it, and no common scalar normalisation of the form produces a
-    non-trivial toric differential operator.
-    The spatial input of the present paper is therefore not established; we formalise it as an
-    explicit hypothesis [H-L] (existence of a spatial second-order limit operator
-    $\LPi = -A\partial_x^2$ on $L^2(\mathbb{R})$) and state every result that consumes it
-    conditionally on [H-L].
+    The companion paper Q5a shows that, with the pipeline's initial vector, the canonical filtration of the admissible
+    fibre on the Heisenberg carrier of $\HeisZ$ is a growing toric Fourier window, that the published admissibility
+    forms converge to the zero form on it, and that no common scalar normalisation produces a non-trivial toric
+    differential operator.
+    The spatial input of the present paper is therefore not established; we formalise it as an explicit hypothesis
+    [H-L] (existence of a spatial second-order limit operator $\LPi = -A\partial_x^2$ on $L^2(\mathbb{R})$) and state
+    every result that consumes it conditionally on [H-L].
     We present three results.
-    First, we show that the BFS shell stratification of $\Gq = \HeisZ$ converges, in
-    the pre-saturation regime, to the Carnot--Car\-a\-th\'{e}o\-do\-ry sphere foliation of
-    $\HeisR$; the homogeneous dimension $\Dhom = 4$ (Bass--Guivarc'h) endows the limiting
-    geometry with the spectral and volume-growth properties of a four-dimensional space
-    (Theorem~\ref{thm:carnot}).
-    Second, under [H-L] we identify $\LPi$ as the image, under the Schr\"{o}dinger
-    representation, of the kinetic sector of the sub-Riemannian Laplacian $\DeltaH$ on
-    $\HeisR$, and extract an effective co-metric tensor from the principal symbol of the full
-    effective operator (Theorem~\ref{thm:metric}).
-    The lifting hypothesis~[H-lift] has been proved in Q9~\cite{Beau2026q9}, so the
-    conditionality of Theorem~\ref{thm:metric} reduces to [H-L] itself.
-    The metric coefficients are determined by companion papers: $A_H = 2$ by
-    Q10~\cite{Beau2026q10}, $A_z = 2$ by Q8~\cite{BeauQ8}, and $A_\tau = 2$ by
-    Q11~\cite{Beau2026q11}, giving, still under [H-L], the isotropic Lorentzian co-metric
-    $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no remaining free parameter.
-    Third, the Born--Infeld admissibility constraint conditionally selects the Lorentzian
-    signature $(-,+,+,+)$ for this metric (Theorem~\ref{thm:lorentz}), the import being
-    conditional on the hyperbolicity hypothesis of~\cite{Beau2026c} ([H-hyp]).
-    Each result is given with an explicit status: structural, or conditional on [H-L] (and,
-    where indicated, on [H-hyp]).
-    The only potential source of [H-L] currently identified in the corpus is the conditional
-    dual-window regime of Q5a version 3.0, which requires an asymptotically non-vanishing
-    critical coverage --- a scenario the published data contradict; Q5 remains open.
+    First, the BFS shell stratification of $\Gq = \HeisZ$ converges, in the pre-saturation regime, to the
+    Carnot--Car\-a\-th\'{e}o\-do\-ry sphere foliation of $\HeisR$; the homogeneous dimension $\Dhom = 4$
+    (Bass--Guivarc'h) gives the limiting geometry the volume growth and spectral dimension of a four-dimensional
+    space.
+    Second, under [H-L] and the lifting hypothesis [H-lift], which identifies $\LPi$ with the kinetic sector of the
+    sub-Laplacian under the Schr\"{o}dinger representation, the principal symbol of the effective operator on
+    $\mathbb{R}_\tau \times \HeisR$ gives a leading-order co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the
+    left-invariant frame.
+    Hypothesis [H-lift] is open: Q9 gives sufficient conditions for a kinetic Mosco limit and does not discharge it.
+    The central slot is empty and cannot be filled by lower-order terms, since the sub-Laplacian has no first-order
+    part and a rank-two principal symbol; a full-rank extension requires a new operator (open problem Q5b-O2).
+    No value of $A_\tau$, $A_H$ or of a central coefficient $A_z$ is established: Q10 derives no value of $A_H$, Q8
+    shows that invariance leaves the common value of an isotropic form free, and the temporal value asserted in Q11
+    rests on the same Casimir normalisation.
+    Third, conditionally on the hyperbolicity hypothesis [H-hyp] of the companion signature analysis, the
+    Born--Infeld admissibility constraint selects the signature $(-,+,+)$ on the non-degenerate block, so that any
+    full-rank extension with a positive central coefficient is Lorentzian.
+    Each result carries an explicit status: structural, or conditional on named hypotheses.
+    Interpretive outlook: the four-dimensionality of the emergent space is carried by the homogeneous dimension of
+    the Heisenberg carrier, while its metric completion, the length of the central direction and the values of the
+    coefficients remain open; Q5 is open.
   \end{abstract}
 
   \paragraph{Keywords.}
@@ -144,12 +138,6 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
       constraint, recovering the Born--Infeld Lagrangian in the continuum.
     \end{enumerate}
     The companion paper Q5a~\cite{Beau2026q5a} addresses convergences (i) and (iii).
-    Its earlier versions claimed, conditionally, a Hilbert inductive limit, convergence of
-    rescaled Heisenberg generators to the infinitesimal generators of the Schrödinger
-    representation, and Mosco convergence of the
-    admissibility forms $\Eq$ to a second-order operator $\LPi = -A\partial_x^2$ on
-    $L^2(\mathbb{R})$, and deferred the geometric reading of $\LPi$ to the present paper.
-    Version 3.0 of Q5a withdraws that derivation.
     It proves that, with the pipeline's initial vector, the canonical filtration of the
     admissible fibre is exactly a growing toric Fourier window; that the published
     admissibility form converges to the zero form on this filtration; and that, if the
@@ -165,10 +153,10 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
       admissibility forms converge to a second-order operator $\LPi = -A\partial_x^2$ on
       $L^2(\mathbb{R})$ with $A > 0$.
     \end{hypothesis}
-    Hypothesis~[H-L] is not established; Q5a version 3.0 shows that it fails for the published
+    Hypothesis~[H-L] is not established; Q5a shows that it fails for the published
     normalisation and for every common scalar rescaling of it on toric targets.
     The only potential source of [H-L] currently identified in the corpus is the conditional
-    dual-window regime of Q5a 3.0, which would require the critical coverage $x_1(q)$ to remain
+    dual-window regime of Q5a, which would require the critical coverage $x_1(q)$ to remain
     bounded away from zero --- a scenario the published data
     contradict~\cite{Beau2026ccnote}.
     All results below that consume $\LPi$ are stated conditionally on [H-L]; the geometric
@@ -193,23 +181,23 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     groups (Pansu~\cite{Pansu1989}) and does not require any new hypothesis.
 
     \medskip
-    \noindent\textbf{Metric extraction (Theorem~\ref{thm:metric}; conditional on [H-L],
-  with the lifting step proved in Q9~\cite{Beau2026q9}).}
-    Under [H-L] and Hypothesis~[H-lift] (Definition~\ref{hyp:lift}, proved in Q9),
+    \noindent\textbf{Metric extraction (Theorem~\ref{thm:metric}; conditional on [H-L] and [H-lift]).}
+    Under [H-L] and Hypothesis~[H-lift] (Hypothesis~\ref{hyp:lift}, open),
     $\LPi = -A\partial_x^2$ is
     the image, under the Schr\"{o}dinger representation, of the kinetic sector of the
     sub-Riemannian Laplacian $\DeltaH = \tilde X^2 + \tilde Y^2$ on $\HeisR$, restricted
     to the admissible sector.
     The full effective operator on the four-dimensional space $\mathbb{R}_\tau \times \HeisR$
-    has a principal symbol $A^{\mu\nu} k_\mu k_\nu$ from which the effective metric tensor
-    $g^{\mu\nu} \propto A^{\mu\nu}$ is read off.
+    has a principal symbol $A^{\mu\nu} k_\mu k_\nu$ from which the effective co-metric tensor
+    $g^{\mu\nu} \propto A^{\mu\nu}$ is read off; it has rank three, with an empty central slot.
 
     \medskip
     \noindent\textbf{Lorentzian signature (Theorem~\ref{thm:lorentz}; conditional on [H-L]
   and on the hyperbolicity hypothesis of~\cite{Beau2026c}).}
     The Born--Infeld admissibility constraint, together with the hyperbolicity
-    hypothesis [H-hyp] of~\cite{Beau2026c}, selects
-    $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in homogeneous isotropic admissible regimes.
+    hypothesis [H-hyp] of~\cite{Beau2026c}, selects the signature $(-,+,+)$ on the non-degenerate block in
+    homogeneous isotropic admissible regimes; a full-rank extension with a positive central coefficient is then
+    Lorentzian.
 
   \subsection{Notation and conventions}
 
@@ -218,10 +206,10 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     is $\Sn = \Bn \setminus B_{n-1}$.
     The sub-Riemannian Laplacian on $\HeisR$ is denoted $\DeltaH$.
     The hypothetical spatial operator of [H-L] is $\LPi = -A\partial_x^2$ acting on
-    $L^2(\mathbb{R})$, where $A > 0$ is an unspecified positive constant (in the withdrawn
-    Q5a derivation, the admissibility weight).
-    The principal symbol of a differential operator $P$ of order $m$ is
-    $\sigma_m(P)(x,\xi)$.
+    $L^2(\mathbb{R})$, where $A > 0$ is an unspecified positive constant.
+    The principal symbol of a differential operator $P = \sum_{|\alpha| \leq m} a_\alpha(x)\,\partial^\alpha$ of
+    order $m$ is $\sigma_m(P)(x,\xi) = \sum_{|\alpha| = m} a_\alpha(x)\,\xi^\alpha$, without factors of $i$; with
+    this convention $\sigma_2(\partial_x^2) = \xi_x^2$, and a co-metric is read off from $\sigma_2$ directly.
     Status labels follow the convention of~\cite{Beau2026q5a}: ``proved'' denotes a
     complete proof in the cited companion; ``structural'' denotes a consequence of classical
     results cited explicitly; ``conditional'' denotes a result following from a named
@@ -235,10 +223,11 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
     The real Heisenberg group $\HeisR$ is the Lie group $\mathbb{R}^3$ equipped with the
     group law
     \begin{equation}
-      (x,y,z) \cdot (x',y',z') = \bigl(x+x',\; y+y',\; z + z' + \tfrac{1}{2}(xy' - x'y)\bigr).
+      (x,y,z) \cdot (x',y',z') = \bigl(x+x',\; y+y',\; z + z' + \tfrac{1}{2}(x'y - xy')\bigr).
       \label{eq:heis-law}
     \end{equation}
-    Its Lie algebra $\mathfrak{h}$ is spanned by left-invariant vector fields
+    For this law, $\frac{d}{dt}\big|_{t=0}\, g\cdot(t,0,0)$ and $\frac{d}{dt}\big|_{t=0}\, g\cdot(0,t,0)$ give the
+    fields below, so its Lie algebra $\mathfrak{h}$ is spanned by the left-invariant vector fields
     \begin{equation}
       \tilde X = \partial_x + \tfrac{y}{2}\,\partial_z, \qquad
       \tilde Y = \partial_y - \tfrac{x}{2}\,\partial_z, \qquad
@@ -321,16 +310,19 @@ Four-Dimensional Lorentzian Geometry\\[6pt]
       \Bigl(\partial_y - \tfrac{x}{2}\partial_z\Bigr)^2.
       \label{eq:sublaplacian}
     \end{equation}
-    It is left-invariant, homogeneous of degree $-2$ under $\delta_r$, and hypoelliptic
-    (H\"{o}rmander's theorem).
+    It is left-invariant, homogeneous of degree $2$ under $\delta_r$ in the sense that
+    $\DeltaH(f\circ\delta_r) = r^2\,(\DeltaH f)\circ\delta_r$, and hypoelliptic (H\"{o}rmander's theorem).
+    It has no first-order part: the coefficient $y/2$ of $\tilde X$ depends on neither $x$ nor $z$, and the
+    coefficient $x/2$ of $\tilde Y$ on neither $y$ nor $z$.
     Its principal symbol at $p = (x,y,z)$ and covector $\xi = (\xi_x, \xi_y, \xi_z)$ is
     \begin{equation}
       \sigma_2(\DeltaH)(p,\xi)
       = \Bigl(\xi_x + \tfrac{y}{2}\xi_z\Bigr)^2 + \Bigl(\xi_y - \tfrac{x}{2}\xi_z\Bigr)^2.
       \label{eq:symbol-sublaplacian}
     \end{equation}
-    This symbol is degenerate in the $\xi_z$ direction (reflecting the sub-Riemannian
-    structure) but is positive on horizontal covectors.
+    This symbol is positive semi-definite of rank two at every point, with kernel spanned by
+    $(-\tfrac{y}{2}, \tfrac{x}{2}, 1)$, reflecting the sub-Riemannian structure; its $\xi_z^2$ coefficient
+    $(x^2+y^2)/4$ is position-dependent and vanishes at the identity.
     The operator $-\DeltaH$ is essentially self-adjoint on $L^2(\HeisR)$ and its heat kernel
     satisfies
     \begin{equation}
@@ -439,12 +431,13 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
 
     The sub-Laplacian $\DeltaH$ acts on functions $f(x,y,z)$ of three variables.
     Hypothesis~[H-L], however, posits a \emph{one-dimensional} operator
-    $\LPi = -A\partial_x^2$ acting on $L^2(\mathbb{R})$ (no longer derived by Q5a; see
+    $\LPi = -A\partial_x^2$ acting on $L^2(\mathbb{R})$ (not derived by Q5a; see
     Section~\ref{sec:intro}).
     Bridging these two objects is the central open step of this paper: we identify the
     natural candidate for this bridge (the Schr\"{o}dinger representation), formulate a
     precise hypothesis [H-lift] in Section~\ref{ssec:hlift}, and give structural evidence.
-    Hypothesis~[H-lift] has since been proved in Q9~\cite{Beau2026q9}.
+    Hypothesis~[H-lift] is open: Q9~\cite{Beau2026q9} gives sufficient conditions for a kinetic Mosco limit and states
+    that its results do not discharge [H-lift].
 
     The connection between $\DeltaH$ and one-dimensional operators runs through the
     Schr\"{o}dinger representation.
@@ -452,16 +445,20 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
     For each $\xi \neq 0$, the Schr\"{o}dinger representation
     $\pi_\xi : \HeisR \to \mathcal{U}(L^2(\mathbb{R}))$ is defined by
     \begin{equation}
-      (\pi_\xi(x,y,z) f)(k) = e^{2\pi i \xi (z + yk)} f(k + x), \qquad f \in L^2(\mathbb{R}).
+      (\pi_\xi(x,y,z) f)(k) = e^{2\pi i \xi (yk + xy/2 - z)} f(k + x), \qquad f \in L^2(\mathbb{R}),
       \label{eq:schrodinger}
     \end{equation}
+    a unitary representation for the group law~\eqref{eq:heis-law}.
     The infinitesimal generators act as
     \begin{equation}
       d\pi_\xi(\tilde X) = \partial_k, \qquad
       d\pi_\xi(\tilde Y) = 2\pi i \xi k, \qquad
-      d\pi_\xi(\tilde Z) = 2\pi i \xi \, \mathrm{Id}.
+      d\pi_\xi(\tilde Z) = -2\pi i \xi \, \mathrm{Id},
       \label{eq:generators-rep}
     \end{equation}
+    consistently with $[\tilde X, \tilde Y] = -\tilde Z$.
+    Q9~\cite{Beau2026q9} orients the central generator oppositely; no statement about $\DeltaH$ depends on this
+    orientation.
     Under this representation, the sub-Laplacian becomes
     \begin{equation}
       d\pi_\xi(\DeltaH) = d\pi_\xi(\tilde X)^2 + d\pi_\xi(\tilde Y)^2
@@ -476,37 +473,25 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
     \end{itemize}
     The operator $\LPi = -A\partial_x^2$ posited by Hypothesis~[H-L] corresponds to (a multiple of)
     the kinetic sector, in the variable $k \equiv x$.
-    It is not produced by Q5a: version 3.0 of that paper withdrew the Mosco derivation, so $\LPi$
+    It is not produced by Q5a, which proves a zero-form limit for its published construction, so $\LPi$
     enters here only through~[H-L]~\cite{Beau2026q5a}.
 
   \subsection{Admissibility filter and sector dominance}
 
-    The admissibility filter $\Pi_q$ of Q5a selects a \emph{low-energy} subspace of
-    $\Cq = L^2(\mathbb{Z}/q\mathbb{Z})$.
-    In the large-$q$ limit, this subspace consists of functions $f \in L^2(\mathbb{R})$
-    whose Fourier support is concentrated near $|\xi| \ll \xi_{\max} = q/2$.
-    In this regime:
-    \begin{itemize}
-      \item The potential term $(2\pi\xi)^2 k^2$ contributes at energy scale
-      $(2\pi\xi)^2 \langle k^2 \rangle$, which is suppressed relative to the kinetic term
-      $\|\partial_k f\|^2$ for admissible functions whose $k$-spread is bounded by
-      $A_n^{\max} = c_{\mathrm{BI}} / \sqrt{\lambda_n}$ (BI admissibility envelope).
-      \item In the admissible sector, $\langle k^2 \rangle \lesssim (c_{\mathrm{BI}})^2 / \lambda_{\min}$
-      is uniformly bounded, while the kinetic energy $\|\partial_k f\|^2$ grows with
-      the number of independent Weil fingerprints.
-    \end{itemize}
-    Under [H-L], the admissibility forms would converge to
-    $A\int |\partial_x f|^2\,dx$, capturing only the kinetic sector.
-    The potential term is sub-leading in the admissible regime and does not contribute
-    to the Mosco limit.
-    This dominance is consistent with the coercivity of the Mosco limit form, which
-    excludes oscillatory contributions from the potential sector: a coercive Dirichlet
-    form must be positive-definite on its domain, whereas the potential term
-    $-(2\pi\xi)^2 k^2$ is negative-definite and would destroy coercivity if retained.
-    This behaviour is consistent with the convergence posited by [H-L]:
-    Mosco convergence suppresses oscillatory contributions and selects
-    the dominant coercive quadratic part, leaving precisely the kinetic sector as the
-    unique coercive limit.
+    The represented operator $-d\pi_\xi(\DeltaH) = -\partial_k^2 + (2\pi\xi)^2 k^2$ is the harmonic oscillator:
+    both of its terms are nonnegative, and the potential term $(2\pi\xi)^2 k^2$ is the modulation energy.
+    Hypothesis~[H-L] posits a limit $A\int |\partial_x f|^2\,dx$, which contains only the kinetic term.
+    For that limit to agree with the represented sub-Laplacian, the modulation energy has to vanish along the
+    sequences realising the limit.
+    Q9~\cite{Beau2026q9} states sufficient conditions of exactly this kind: if the kinetic forms Mosco-converge [K]
+    and every finite-energy limit vector admits one kinetic recovery sequence on which the modulation energy
+    vanishes [R], then the sum Mosco-converges to the kinetic form (Q9 Theorem~1.2).
+    The resulting form is the free kinetic form, not the full oscillator form, and it does not select a central
+    character.
+    Neither [K] nor [R] is derived from the admissibility data, and Q9 states that its results do not discharge
+    [H-lift].
+    A bound on the position moment of admissible vectors gives an elementwise kinetic lower bound only; its
+    admissible class is a cone, not a linear form domain (Q9 Section~5).
 
   \subsection{The lifting hypothesis}
     \label{ssec:hlift}
@@ -520,7 +505,7 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
       $\DeltaH$ on $\HeisR$, restricted to the admissible (low-energy) subspace of
       $L^2(\mathbb{R})$.
       Equivalently, the full sub-Laplacian $\DeltaH$ on $\HeisR$ is the pre-image (under
-      $\pi_1$) of the harmonic oscillator $\partial_k^2 - k^2$, and $\LPi$ is its kinetic
+      $\pi_1$) of the operator $\partial_k^2 - (2\pi)^2 k^2$, and $\LPi$ is its kinetic
       component in the admissible sector.
     \end{hypothesis}
 
@@ -529,19 +514,17 @@ Pansu convergence of Theorem~\ref{thm:carnot} is visible in the data.
       \label{rem:hlift-justification}
       Hypothesis~[H-lift] is supported by three structural observations:
       \begin{enumerate}
-        \item Earlier versions of Q5a claimed (T2; withdrawn in version 3.0) that the
-        rescaled Heisenberg generators $\hat X_q / \sqrt{q}$, $\hat Y_q / \sqrt{q}$ converge
-        strongly to the infinitesimal Schrödinger generators $d\pi_1(\tilde X) = \partial_k$ and
-        $d\pi_1(\tilde Y) = ik$, which are precisely the generators entering $\DeltaH$
-        via~\eqref{eq:generators-rep}; this is retained here as structural motivation only.
-        \item The limit posited by [H-L] captures only the kinetic sector, consistently with
-        the sector-dominance analysis of Section~\ref{sec:lift}.2.
-        This is a structural prediction: the admissibility filter must project out the potential
-        term to produce a coercive (not oscillatory) Dirichlet form.
+        \item The rescaled Heisenberg generators $\hat X_q / \sqrt{q}$, $\hat Y_q / \sqrt{q}$ are the natural
+        discrete counterparts of the infinitesimal Schr\"odinger generators $d\pi_1(\tilde X) = \partial_k$ and
+        $d\pi_1(\tilde Y) = 2\pi i k$, which enter $\DeltaH$ via~\eqref{eq:generators-rep}; no convergence of the
+        former to the latter is established in the corpus, and this item is structural motivation only.
+        \item The limit posited by [H-L] contains only the kinetic sector.
+        For it to agree with the represented sub-Laplacian, the modulation energy must vanish along recovery
+        sequences, which is premise [R] of Q9 (Section~\ref{sec:lift}.2).
         \item The operator identity $d\pi_\xi(\DeltaH) = \partial_k^2 - (2\pi\xi)^2 k^2$
         shows that the kinetic sector of $\DeltaH$ and $\LPi$ share the same functional form
-        $-A\partial_k^2$ up to the overall constant $A$ (which absorbs the central character
-        $\xi$ and, in the withdrawn Q5a derivation, the admissibility weight).
+        $-A\partial_k^2$ up to the overall constant $A$, which absorbs the central character
+        $\xi$ and the normalisation of the admissibility forms.
       \end{enumerate}
       The main open step is a direct proof that the Mosco limit of $\Eq$ coincides with the
       kinetic sector of $d\pi_1(\DeltaH)$ modulo the potential contribution, which is
@@ -665,55 +648,50 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
       to the effective operator $L_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times \HeisR$
       given by~\eqref{eq:leff}.
       Its principal symbol defines, via~\eqref{eq:op-metric}, a leading-order effective
-      co-metric tensor
+      co-metric tensor, which in the left-invariant frame $(\partial_\tau, \tilde X, \tilde Y, \tilde Z)$ is
       \begin{equation}
-        g^{\mu\nu}(p) = \mathrm{diag}(-A_\tau,\; A_H,\; A_H,\; 0_{z\text{-sector (sub-principal)}})
+        g^{\mu\nu}(p) = \mathrm{diag}(-A_\tau,\; A_H,\; A_H,\; 0)
         \label{eq:metric-tensor}
       \end{equation}
-      on $\mathbb{R}_\tau \times \HeisR$, where the $z$-component carries sub-Riemannian
-      corrections from the Heisenberg structure.
-      This tensor should be understood as the leading-order effective co-metric associated
-      with the principal symbol; it becomes a non-degenerate metric only after incorporation
-      of sub-principal corrections, as discussed in Remark~\ref{rem:zdirection} and
-      open problem Q5b-O2.
+      on $\mathbb{R}_\tau \times \HeisR$.
+      This tensor has rank three; no term of lower differential order in $L_{\mathrm{eff}}$ changes it, and a
+      non-degenerate co-metric requires a new operator (Remark~\ref{rem:zdirection} and open problem Q5b-O2).
       In the homogeneous isotropic regime $(x, y) \approx 0$ (near the identity of $\HeisR$),
       the off-diagonal terms in~\eqref{eq:symbol-expanded} vanish and the symbol simplifies to
       $\sigma_2(L_{\mathrm{eff}}) \approx -A_\tau k_\tau^2 + A_H (k_x^2 + k_y^2)$,
       giving a three-dimensional pseudo-Riemannian symbol at leading order.
     \end{theorem}
 
-    \begin{remark}[Unconditional status via Q9]
+    \begin{remark}[Status of the lifting hypothesis]
       \label{rem:q9lift}
-      Hypothesis~[H-lift] has been proved in Q9~\cite{Beau2026q9} via generator suppression.
-      The conditionality of Theorem~\ref{thm:metric} therefore reduces to Hypothesis~[H-L]
-      alone: what is missing is not the lift but the existence of the spatial limit operator
-      itself (Q5a version 3.0).
+      Hypothesis~[H-lift] is not discharged.
+      Q9~\cite{Beau2026q9} proves that, under its premises [K] and [R], the forms Mosco-converge to the kinetic form,
+      so that with a supplied representation the limit agrees with the kinetic-sector form (Q9 Corollary~6.1), and it
+      states that this does not remove [H-lift] from the present construction.
+      Theorem~\ref{thm:metric} is therefore conditional on both [H-L] and [H-lift].
     \end{remark}
 
     \begin{remark}[Status of the $z$-direction]
       \label{rem:zdirection}
-      The sub-Riemannian symbol~\eqref{eq:symbol-sublaplacian} is degenerate in $k_z$:
-      the $z$-direction (central element $\tilde Z$) does not appear in the principal symbol
-      of $\DeltaH$ at leading sub-Riemannian order.
-      Its contribution enters via sub-principal terms and is responsible for the distinction
-      between the topological dimension $3$ of $\HeisR$ and its Hausdorff dimension $\Dhom = 4$.
-      The coefficient $A_z$ of the $z$-direction has since been established:
-      Q8~\cite{BeauQ8} proves $A_z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
-      resolving Q5b-O2 at the algebraic level.
-      The operator-theoretic sub-principal framework (Q5b-O2) provides an independent
-      derivation of this value within the hypoelliptic calculus.
-      The Lorentzian signature result (Section~\ref{sec:lorentz}) applies to the non-degenerate
-      part of the symbol and holds independently of this subtlety.
+      The sub-Riemannian symbol~\eqref{eq:symbol-sublaplacian} has rank two at every point.
+      The central direction enters it only through the position-dependent coefficients of $\tilde X$ and $\tilde Y$;
+      $\DeltaH$ has no first-order part, and no term of lower differential order changes its principal symbol
+      (Q8~\cite{BeauQ8}, Proposition~3.1).
+      Under the dilations~\eqref{eq:dilations}, $\DeltaH$ is homogeneous of degree two and $\tilde Z^2$ of degree four;
+      a left-invariant operator whose co-metric has a positive constant central coefficient must contain a term
+      $\tilde Z^2$, and the ratio of central to horizontal coefficients then depends on the dilation scale, so that
+      their equality selects a length scale (Q8, Proposition~5.1 and Remark~5.2).
+      No value of $A_z$ is established: for a supplied positive rank-three form invariant under the full
+      $\mathfrak{su}(2)$ action, Q8 shows $A_H = A_z$ with the common value free (Q8, Proposition~4.2).
+      Open problem Q5b-O2 is open.
+      The distinction between the topological dimension $3$ of $\HeisR$ and its Hausdorff dimension $\Dhom = 4$
+      comes from the weights of the stratification, not from terms of the symbol.
+      The Lorentzian signature result (Section~\ref{sec:lorentz}) applies to the non-degenerate block
+      $(-A_\tau, A_H, A_H)$.
       Crucially, the effective four-dimensionality of the geometry arises from the homogeneous
       (Hausdorff and spectral) dimension $\Dhom = 4$ of the Carnot structure, not from a
       non-degenerate Riemannian metric at the principal-symbol level; these two notions of
       dimension must be carefully distinguished.
-      The central direction $\tilde Z$ does not carry an independent kinetic term at
-      the sub-Riemannian level: its contribution to the principal symbol of $\DeltaH$
-      is sub-leading (see~\eqref{eq:symbol-sublaplacian}).
-      Its effective dynamical role emerges only after projection, where it couples to
-      the ordering parameter~$\tau$ and contributes to the Lorentzian structure
-      through the sub-principal corrections addressed in open problem Q5b-O2.
     \end{remark}
 
     \begin{remark}[Nature of the effective four-dimensionality]
@@ -727,11 +705,10 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
       object, valid after projection of the discrete admissibility structure onto the
       admissible continuum configurations; it does not claim to be a smooth metric at
       every point of $\mathbb{R}_\tau \times \HeisR$ without further hypotheses.
-      The transition from the degenerate sub-Riemannian symbol to a non-degenerate
-      effective metric is expected to occur through sub-principal corrections to the
-      operator $L_{\mathrm{eff}}$, which lift the central direction~$\tilde Z$ and
-      generate a full-rank quadratic form at the effective level; this is the precise
-      mathematical content of open problem Q5b-O2.
+      A non-degenerate effective co-metric cannot arise from lower-order corrections to
+      $L_{\mathrm{eff}}$ (Q8~\cite{BeauQ8}, Proposition~3.1); it requires a new operator containing a central term
+      of homogeneous degree four, together with the length scale that such a term carries, and this is the
+      content of open problem Q5b-O2.
     \end{remark}
 
   \section{Lorentzian Signature from Born--Infeld Admissibility}
@@ -754,8 +731,10 @@ of Q5a, consistently with~\cite{Beau2026q5a}.
       \label{thm:lorentz}
       In homogeneous and quasi-isotropic admissible regimes, and under the hyperbolicity
       hypothesis [H-hyp] of~\cite{Beau2026c}, the Born--Infeld admissibility
-      constraint selects the Lorentzian signature $(-,+,+,+)$ for the effective metric
-      defined by~\eqref{eq:op-metric}.
+      constraint selects the signature $(-,+,+)$ on the non-degenerate block $(-A_\tau, A_H, A_H)$ of the effective
+      co-metric~\eqref{eq:metric-tensor}.
+      Any full-rank extension whose central coefficient is positive then has the Lorentzian signature
+      $(-,+,+,+)$.
     \end{theorem}
 
     \begin{proof}[Proof sketch, following the conditional analysis of~{\cite{Beau2026c}}]
@@ -779,17 +758,13 @@ Four signature classes must be excluded:
   \item \textbf{Ultra-hyperbolic (two or more time-like directions)}: fails to admit a
   globally well-posed initial value problem (Hadamard ill-posedness) and is excluded under
   the hyperbolicity hypothesis of~\cite{Beau2026c}.
-  \item \textbf{Degenerate (rank $< 4$)}: excluded at the level of the effective
-  metric after incorporation of sub-principal corrections.
-  The leading sub-Riemannian principal symbol is degenerate in the central direction
-  $k_z$ (Remark~\ref{rem:zdirection}), but the full effective operator, including
-  sub-principal contributions from the Heisenberg commutator structure, is expected
-  to yield a non-degenerate metric on $\mathbb{R}_\tau \times \HeisR$
-  (open problem Q5b-O2).
-  The argument here applies to the non-degenerate block $(-A_\tau, A_H, A_H)$
-  from the temporal and horizontal directions; the $z$-direction contributes
-  positive-definiteness once the sub-principal corrections are incorporated,
-  and does not affect the signature count.
+  \item \textbf{Degenerate (rank $< 4$)}: not excluded by this argument.
+  The co-metric~\eqref{eq:metric-tensor} has rank three, and no term of lower differential order changes this
+  (Remark~\ref{rem:zdirection}).
+  The argument applies to the non-degenerate block $(-A_\tau, A_H, A_H)$ from the temporal and horizontal
+  directions.
+  A full-rank extension requires a new operator (open problem Q5b-O2); a positive central coefficient then adds a
+  positive entry and does not change the count of time-like directions.
   \item \textbf{Parabolic}: implies the existence of a characteristic direction in which
   the Cauchy problem is ill-posed, contradicting the monotonic projective ordering
   of~\cite{Beau2026pto}.
@@ -797,14 +772,13 @@ Four signature classes must be excluded:
 The unique remaining signature compatible with (i)~hyperbolicity of
 $\sigma_2(L_{\mathrm{eff}})$ (hypothesis [H-hyp]), (ii)~a finite characteristic cone,
 (iii)~monotonic projective ordering along $\tau$, and (iv)~the bounded Born--Infeld
-admissibility constraint, is the Lorentzian signature $(-,+,+,+)$.
+admissibility constraint, is the signature $(-,+,+)$ on the non-degenerate block.
 The selection argument is given in~\cite{Beau2026c}, conditionally on its hyperbolicity
 hypothesis, and depends, beyond that hypothesis, only on the capacity bound [A-cap]
 of~\cite{Beau2026c}, whose bounded-flux content is present in the Foundation
 axioms~\cite{Beau2026m}.
-After normalising the maximal admissible propagation speed to $c = 1$, the effective
-metric is fixed to $g^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ in the
-homogeneous isotropic regime.
+After normalising the maximal admissible propagation speed to $c = 1$, the non-degenerate block is proportional
+to $\mathrm{diag}(-1,+1,+1)$ in the homogeneous isotropic regime.
 Conditionally on [H-hyp], this selection mechanism uses only the admissibility
 constraints; the hyperbolicity hypothesis itself is an explicit assumption
 of~\cite{Beau2026c}, not derived from the capacity bound.
@@ -814,12 +788,13 @@ of~\cite{Beau2026c}, not derived from the capacity bound.
       \label{rem:emergence}
       The Lorentzian metric is not introduced as a background structure.
       Conditionally on the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c},
-      it is the unique pseudo-Riemannian structure compatible with:
+      its signature on the non-degenerate block is the unique one compatible with:
       the Heisenberg group symmetry (giving $\Dhom = 4$),
       the projective ordering (giving the temporal direction $\tau$),
       and the Born--Infeld admissibility bound (excluding the remaining signatures).
-      Under the same hypothesis, Minkowski geometry emerges as the stable effective
-      description of a maximally symmetric admissible regime.
+      Under the same hypothesis, and once a full-rank extension with a positive central coefficient is supplied
+      (open problem Q5b-O2), Minkowski geometry would be the stable effective description of a maximally symmetric
+      admissible regime.
       The emergence of the Lorentzian structure is thus not postulated as a background,
       but results, under [H-hyp], from
       the admissibility constraints governing the projection of unresolved configurations
@@ -842,16 +817,18 @@ of~\cite{Beau2026c}, not derived from the capacity bound.
       classical, following Bass--Guivarc'h~\cite{Bass1972,Guivarch1973} and
       Pansu~\cite{Pansu1989}.
       \item \textbf{Spatial limit input} [H-L] (Hypothesis~\ref{hyp:HL}): explicit
-      hypothesis; not established, and shown by Q5a version 3.0 to fail for the published
+      hypothesis; not established, and shown by Q5a to fail for the published
       normalisation and its common scalar rescalings.
-      \item \textbf{Operator lifting} [H-lift] (Hypothesis~\ref{hyp:lift}): proved in
-      Q9~\cite{Beau2026q9}; its object exists only under [H-L].
+      \item \textbf{Operator lifting} [H-lift] (Hypothesis~\ref{hyp:lift}): explicit hypothesis, open;
+      Q9~\cite{Beau2026q9} gives sufficient conditions [K] and [R] and does not discharge it; its object exists only
+      under [H-L].
       \item \textbf{Metric extraction} (Theorem~\ref{thm:metric}): structural consequence
-      of [H-lift] (proved in Q9), conditional on [H-L].
+      of [H-lift], conditional on [H-L] and [H-lift]; the co-metric has rank three.
       \item \textbf{Lorentzian signature} (Theorem~\ref{thm:lorentz}): imported from the
       conditional signature-selection analysis of~\cite{Beau2026c}, conditional on
       Theorem~\ref{thm:metric} and on the hyperbolicity hypothesis [H-hyp]
-      of~\cite{Beau2026c}.
+      of~\cite{Beau2026c}; it concerns the non-degenerate block.
+      \item \textbf{Metric coefficients} $A_\tau$, $A_H$, $A_z$: no value established.
     \end{itemize}
 
     \medskip
@@ -871,73 +848,88 @@ of~\cite{Beau2026c}, not derived from the capacity bound.
         Thm.~\ref{thm:carnot} & BFS shells converge to CC spheres, $\Dhom = 4$ &
         Structural (from above) \\
         {[H-L]} & Spatial limit $\LPi = -A\partial_x^2$ exists &
-        Hypothesis; not established (Q5a 3.0 no-go) \\
+        Hypothesis; not established (Q5a no-go) \\
         {[H-lift]} & $\LPi$ is kinetic sector of $d\pi_1(\DeltaH)$ &
-        Proved (Q9~\cite{Beau2026q9}); object conditional on [H-L] \\
-        Thm.~\ref{thm:metric} & Metric tensor $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
-        Conditional on [H-L] (lift: Q9~\cite{Beau2026q9}) \\
-        Thm.~\ref{thm:lorentz} & Lorentzian signature $(-,+,+,+)$ &
+        Hypothesis; open (Q9~\cite{Beau2026q9}: sufficient conditions) \\
+        Thm.~\ref{thm:metric} & Rank-three co-metric $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
+        Conditional on [H-L] and [H-lift] \\
+        Thm.~\ref{thm:lorentz} & Signature $(-,+,+)$ of the non-degenerate block &
         Conditional on Thm.~\ref{thm:metric} and [H-hyp] of~\cite{Beau2026c} \\
         \hline
         Q5b-O1 & Prove [H-lift] via Plancherel decomposition &
-        Resolved: Q9~\cite{Beau2026q9} \\
+        Open; Q9~\cite{Beau2026q9} gives sufficient conditions \\
         Q5b-O2 & Extend metric to full $4\times 4$ with $z$-direction &
-        Resolved: Q8~\cite{BeauQ8} ($A_z=2$) \\
+        Open; requires a new operator (Q8~\cite{BeauQ8}) \\
         Q5b-O3 & Identify $A_\tau$, $A_H$ from admissibility data &
-        Resolved: Q11~\cite{Beau2026q11} ($A_\tau = 2$; see \S\ref{ssec:resolved-o3}) \\
+        Open; no value established (\S\ref{ssec:resolved-o3}) \\
         \hline
       \end{tabular}
     \end{center}
 
-  \subsection{Ancillary questions and their resolution}
+  \subsection{Ancillary questions and their status}
 
-    Three questions arising naturally from the results of this paper lay outside its
-    scope; they were addressed by companion papers and are recorded here for completeness.
+    Three questions arising naturally from the results of this paper lie outside its scope; their status in the
+    companion papers is recorded here.
 
     \textbf{Q5b-O1} (Proof of [H-lift] via Plancherel decomposition).
-    Q9~\cite{Beau2026q9} proves hypothesis~[H-lift] via generator suppression:
-    the admissibility filter $\Pi_q$ concentrates on the kinetic sector of
-    $d\pi_\xi(\DeltaH)$ unconditionally, making the lift to $L_{\mathrm{eff}}$
-    a theorem rather than a hypothesis.
-    Theorem~\ref{thm:metric} is therefore unconditional with respect to~[H-lift], but it
-    remains conditional on [H-L]: the existence of the spatial limit operator itself is not
-    established (Q5a version 3.0).
-    The original Plancherel approach outlined here remains of independent interest
-    as an alternative derivation.
+    Open.
+    Q9~\cite{Beau2026q9} proves that, if the kinetic forms Mosco-converge and every finite-energy limit vector admits a
+    kinetic recovery sequence on which the modulation energy vanishes, the forms Mosco-converge to the kinetic form;
+    with a supplied Schr\"odinger representation the limit then agrees with the kinetic-sector form.
+    These premises are not derived from the admissibility data, and Q9 states that its results do not discharge
+    [H-lift].
+    Theorem~\ref{thm:metric} therefore remains conditional on [H-L] and [H-lift].
+    The Plancherel approach outlined in Remark~\ref{rem:harmonic-analysis} remains a possible route.
 
     \textbf{Q5b-O2} (Extension to a full $4 \times 4$ Lorentzian metric).
-    Q8~\cite{BeauQ8} establishes $A_z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity
-    on $\mathrm{Sym}^2(V_\rho)$ (Q7~\cite{Beau2026q7}): the $\mathfrak{su}(2)$ Casimir
-    acts as $2\cdot\mathrm{Id}$ on the spin-$1$ module $\mathrm{Sym}^2(V_\rho)$,
-    and this value is inherited by the $z$-direction coefficient of $L_{\mathrm{eff}}$.
-    Combined with $A_H = 2$ (resolved below), the effective co-metric takes the form
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\, 2,\, 2,\, 2)$.
-    The operator-theoretic sub-principal framework (Beals--Greiner calculus, tangent
-    groupoid) remains of independent interest as a derivation from within the PDE calculus.
+    Open.
+    Q8~\cite{BeauQ8} proves that the Heisenberg commutator supplies no central coefficient: the sub-Laplacian has no
+    first-order part and a rank-two principal symbol, which lower-order terms do not change.
+    A left-invariant completion with a positive constant central coefficient must contain a term $\tilde Z^2$ of
+    homogeneous degree four, and equality of central and horizontal coefficients selects a length scale.
+    For a supplied positive rank-three form invariant under the full $\mathfrak{su}(2)$ action of the spin-one
+    module $\mathrm{Sym}^2(V_\rho)$ of Q7~\cite{Beau2026q7}, $A_H = A_z$ with the common value free: the Casimir
+    eigenvalue $2$ fixes a normalisation, not a coefficient.
 
     \textbf{Q5b-O3} (Identification of $A_\tau$ and $A_H$ from admissibility data).
     \label{ssec:resolved-o3}
-    Q10~\cite{Beau2026q10} establishes $A_H = 2$ via the spectral universality
-    hypothesis~[U] proved in U1~\cite{Beau2026u1}: the admissibility weight satisfies
-    $a_q(s)\cdot q^2 \to 2$ as $q\to\infty$ (confirmed numerically for
-    $q \in \{29,61,101,151,211\}$, W1~\cite{Beau2026w1}).
-    Q11~\cite{Beau2026q11} subsequently identifies $A_\tau = 2$ via a cascade
-    internalisation lemma: $\partial_\tau$ is the continuum limit of the cascade
-    increment operator $T : \sigma_c(n) \mapsto \sigma_c(n+1)$ by
-    Theorem~\ref{thm:carnot}, and SU(2)-equivariance of $T$ under~[U] forces,
-    by Schur's lemma and the Casimir normalisation of Q8~\cite{BeauQ8},
-    \[
-      A_\tau = C_{\mathfrak{su}(2)}\big|_{\mathrm{Sym}^2(V_\rho)} = 2.
-    \]
-    The coefficients of the effective co-metric are therefore uniquely determined with
-    no free parameter, and, conditionally on [H-L] and on the hyperbolicity hypothesis
-    [H-hyp] of~\cite{Beau2026c} (Theorem~\ref{thm:lorentz}), the signature is Lorentzian:
-    \[
-      g^{\mu\nu} = 2\,\eta^{\mu\nu}, \qquad \eta = \mathrm{diag}(-1,+1,+1,+1).
-    \]
-    Spacetime structure would be, under these hypotheses, a derived consequence of the
-    non-injective projection; establishing [H-L] --- or replacing it --- is the open content
-    of Q5.
+    Open.
+    Q10~\cite{Beau2026q10} proves a conditional isotropy statement: under a uniformity hypothesis on the fingerprint
+    observable, a sector assignment, a linear response law and a supplied rank-three target, the ratio $A_H/A_z$
+    tends to one; the absolute value follows only from an independently supplied scale, and no value of $A_H$ is
+    derived.
+    Hypothesis [U] is open~\cite{Beau2026u1}.
+    Q11~\cite{Beau2026q11} identifies $A_\tau = 2$ through the Casimir normalisation; by the scale freedom recorded
+    under Q5b-O2, that normalisation fixes no coefficient, so no value of $A_\tau$ is established on the inputs
+    available here.
+    Conditionally on [H-L], [H-lift] and the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c}
+    (Theorem~\ref{thm:lorentz}), the non-degenerate block of the co-metric has signature $(-,+,+)$.
+    Establishing [H-L], or replacing it, and constructing a full-rank extension are the open content of Q5.
+
+  \section{Conclusion}
+  \label{sec:conclusion}
+
+  \subsection{What this paper establishes}
+
+    The BFS shells of $\HeisZ$ converge, before saturation, to the Carnot--Carath\'eodory foliation of $\HeisR$, whose
+    homogeneous dimension is four (Theorem~\ref{thm:carnot}).
+    Under the two open hypotheses [H-L] and [H-lift], the effective operator on $\mathbb{R}_\tau \times \HeisR$ has a
+    rank-three co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the left-invariant frame
+    (Theorem~\ref{thm:metric}), and under [H-hyp] its non-degenerate block has signature $(-,+,+)$
+    (Theorem~\ref{thm:lorentz}).
+    The central slot is not filled by lower-order terms, and no metric coefficient has an established value.
+
+  \subsection{Interpretive outlook}
+
+    \emph{This subsection is interpretation, not a result.}
+    The emergent space of the programme is four-dimensional in two distinct senses that the paper keeps apart: as a
+    manifold $\mathbb{R}_\tau \times \HeisR$, and through the homogeneous dimension of its spatial factor, which
+    governs volume growth and heat-kernel decay.
+    What is not yet emergent is the metric in the central direction: the non-commutativity of the horizontal
+    directions makes the central direction reachable, but assigns it no length.
+    For a reader situating the programme, the geometric shape of the effective spacetime is structurally supported,
+    while its full metric, its scale and the hypotheses [H-L] and [H-lift] that connect it to the admissibility data
+    remain to be constructed.
 
   \section*{Acknowledgements}
 
@@ -946,6 +938,8 @@ of~\cite{Beau2026c}, not derived from the capacity bound.
   this manuscript.
 
   \bibliographystyle{plain}
+  {\raggedright
   \bibliography{cosmochrony-bibliography,external-refs}
+  }
 
 \end{document}

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry"
+title: "Toward Four-Dimensional Lorentzian Geometry from BFS Shell Stratification"
 type: software
 authors:
   - family-names: "Beau"
@@ -12,7 +12,7 @@ doi: "10.5281/zenodo.19686700"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry"
+  title: "Toward Four-Dimensional Lorentzian Geometry from BFS Shell Stratification"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"

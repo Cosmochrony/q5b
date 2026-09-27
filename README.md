@@ -1,47 +1,53 @@
-# Q5b — BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry
+# Q5b — Toward Four-Dimensional Lorentzian Geometry from BFS Shell Stratification
 
 This repository contains the source of the **Q5b Cosmochrony paper**
-*BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian
-Geometry*.
+*Toward Four-Dimensional Lorentzian Geometry from BFS Shell Stratification*.
 
-**Status revision (version 2.0).** Version 3.0 of the companion paper Q5a withdraws its
-earlier derivation of a spatial limit operator $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$:
-the canonical filtration is exactly a growing toric Fourier window, the published
-admissibility form converges to the zero form on it, and no common scalar normalisation
-produces a non-trivial toric differential operator. The spatial input of this paper is
-therefore formalised as an explicit, unestablished hypothesis **[H-L]** (existence of the
-spatial limit operator), and every result consuming $L_\Pi$ is stated conditionally on it.
-The geometric convergence results (Carnot limit, $D_{\mathrm{hom}} = 4$) are independent of
-[H-L] and stand.
+The companion paper Q5a shows that the canonical filtration of the admissible fibre is a growing toric Fourier
+window, that the published admissibility form converges to the zero form on it, and that no common scalar
+normalisation produces a non-trivial toric differential operator. The spatial input of this paper is therefore an
+explicit, unestablished hypothesis **[H-L]** (existence of a spatial limit operator $L_\Pi = -A\partial_x^2$ on
+$L^2(\mathbb{R})$), and every result consuming $L_\Pi$ is stated conditionally on it.
 
 ## Core Results
 
-1. **Four-dimensional limit geometry**: the BFS shell stratification of
-   $\mathrm{Heis}_3(\mathbb{Z}/q)$ converges, in the pre-saturation regime, to the
-   Carnot–Carathéodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous
-   dimension $D_{\mathrm{hom}} = 4$ (Bass–Guivarc'h) gives the limiting geometry the spectral
-   and volume-growth properties of a four-dimensional space.
-2. **Metric extraction (conditional on [H-L])**: under [H-L], $L_\Pi$ is the image, under
-   the Schrödinger representation, of the kinetic sector of the sub-Riemannian Laplacian
-   $\Delta_H$; an effective co-metric is read off the principal symbol of the effective
-   operator.
+1. **Four-dimensional limit geometry (structural)**: the BFS shell stratification of
+   $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the pre-saturation regime, to the Carnot–Carathéodory
+   sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous dimension $D_{\mathrm{hom}} = 4$
+   (Bass–Guivarc'h) gives the limiting geometry the spectral and volume-growth properties of a four-dimensional
+   space.
+2. **Metric extraction (conditional on [H-L] and [H-lift])**: under the lifting hypothesis [H-lift], $L_\Pi$ is the
+   image, under the Schrödinger representation, of the kinetic sector of the sub-Laplacian $\Delta_H$, and the
+   principal symbol of the effective operator gives the co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the
+   left-invariant frame. It has rank three; no lower-order term fills the central slot.
+3. **Signature (conditional also on [H-hyp])**: the Born–Infeld admissibility constraint selects the signature
+   $(-,+,+)$ on the non-degenerate block; a full-rank extension with a positive central coefficient is Lorentzian.
 
-The lifting hypothesis [H-lift] has been proved in Q9, so the conditionality of the metric
-result reduces to [H-L] alone. The coefficients are determined by companion papers:
-$A_H = 2$ (Q10), $A_z = 2$ (Q8), $A_\tau = 2$ (Q11) — all readings conditional on [H-L].
-Establishing [H-L], or replacing it, is the open content of Q5.
+## Status of the open inputs
+
+- **[H-lift] is open.** Q9 gives sufficient conditions for a kinetic Mosco limit and does not discharge it.
+- **Q5b-O2 is open.** Q8 shows that the Heisenberg commutator supplies no central coefficient: a full-rank extension
+  requires a new operator with a term $\tilde Z^2$ of homogeneous degree four, which carries a length scale.
+- **No coefficient value is established.** Q10 derives no value of $A_H$; Q8 shows that $\mathfrak{su}(2)$-invariance
+  leaves the common value of an isotropic form free; the value $A_\tau = 2$ asserted in Q11 rests on the same Casimir
+  normalisation.
+- The paper uses the group law $z'' = z + z' + \tfrac12(x'y - xy')$, for which
+  $\tilde X = \partial_x + \tfrac{y}{2}\partial_z$ and $\tilde Y = \partial_y - \tfrac{x}{2}\partial_z$ are
+  left-invariant and $[\tilde X, \tilde Y] = -\tilde Z$.
+
+Establishing [H-L], or replacing it, and constructing a full-rank extension are the open content of Q5.
 
 ## Keywords
 
-BFS stratification, Carnot–Carathéodory geometry, sub-Riemannian Laplacian, homogeneous
-dimension, Mosco convergence, Lorentzian signature, emergent spacetime.
+BFS stratification, Carnot–Carathéodory geometry, sub-Riemannian Laplacian, homogeneous dimension, Mosco convergence,
+Lorentzian signature, emergent spacetime, Cosmochrony.
 
 ## Repository Contents
 
 ```
 q5b/
-├── tex/         # LaTeX sources (main + cosmochrony-bibliography.bib)
-├── out/         # Compiled paper PDF (q5b.pdf)
+├── tex/         # LaTeX sources (main + cosmochrony-bibliography.bib + external-refs.bib)
+├── compile.sh   # Build script (output in out/, not versioned)
 ├── zenodo.json  # Zenodo deposition metadata
 └── README.md
 ```
@@ -53,11 +59,10 @@ q5b/
 
 ## Citation
 
-> J. Beau, *BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian
-> Geometry*, Zenodo, 2026. DOI: 10.5281/zenodo.19686700.
+> J. Beau, *Toward Four-Dimensional Lorentzian Geometry from BFS Shell Stratification*, Zenodo, 2026.
+> DOI: 10.5281/zenodo.19686700.
 
 ## Acknowledgements
 
-Portions of the editorial refinement benefited from iterative interactions with large
-language models, used as analytical assistants. All claims and final formulations remain
-the sole responsibility of the author.
+Portions of the editorial refinement benefited from iterative interactions with large language models, used as
+analytical assistants. All claims and final formulations remain the sole responsibility of the author.
