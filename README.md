@@ -12,16 +12,17 @@ $L^2(\mathbb{R})$), and every result consuming $L_\Pi$ is stated conditionally o
 ## Core Results
 
 1. **Four-dimensional limit geometry (structural)**: the BFS shell stratification of
-   $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the pre-saturation regime, to the Carnot–Carathéodory
-   sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous dimension $D_{\mathrm{hom}} = 4$
+   $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, on balls of radius $n \ll \sqrt q$, to the sphere foliation of a
+   sub-Finsler Carnot–Carathéodory metric on $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous dimension $D_{\mathrm{hom}} = 4$
    (Bass–Guivarc'h) gives the limiting geometry the spectral and volume-growth properties of a four-dimensional
    space.
 2. **Metric extraction (conditional on [H-L] and [H-lift])**: under the lifting hypothesis [H-lift], $L_\Pi$ is the
    image, under the Schrödinger representation, of the kinetic sector of the sub-Laplacian $\Delta_H$, and the
    principal symbol of the effective operator gives the co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the
    left-invariant frame. It has rank three; no lower-order term fills the central slot.
-3. **Signature (conditional also on [H-hyp])**: the Born–Infeld admissibility constraint selects the signature
-   $(-,+,+)$ on the non-degenerate block; a full-rank extension with a positive central coefficient is Lorentzian.
+3. **Signature (conditional also on [H-hyp])**: the hyperbolicity hypothesis [H-hyp], applied to the sector that does
+   not depend on the central variable, gives the signature $(-,+,+)$ on the non-degenerate block with $\tau$ time-like;
+   an extension $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$ with $A_z > 0$ would be Lorentzian.
 
 ## Status of the open inputs
 
