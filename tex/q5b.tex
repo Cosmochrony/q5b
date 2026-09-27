@@ -86,8 +86,8 @@ from BFS Shell Stratification\\[6pt]
     Carnot--Car\-a\-th\'{e}o\-do\-ry metric on $\HeisR$; the homogeneous dimension $\Dhom = 4$
     (Bass--Guivarc'h) gives the limiting geometry the volume growth and spectral dimension of a four-dimensional
     space.
-    Second, under [H-L] and the lifting hypothesis [H-lift], which identifies $\LPi$ with the kinetic sector of the
-    sub-Laplacian under the Schr\"{o}dinger representation, the principal symbol of the effective operator on
+    Second, under [H-L] and the lifting hypothesis [H-lift], which identifies $\LPi$ with $A$ times the kinetic sector
+    of the nonnegative operator $-\DeltaH$ under the Schr\"{o}dinger representation, the principal symbol of the effective operator on
     $\mathbb{R}_\tau \times \HeisR$ gives a leading-order co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the
     left-invariant frame.
     Hypothesis [H-lift] is open: Q9 gives sufficient conditions for a kinetic Mosco limit and does not discharge it.
@@ -193,9 +193,9 @@ from BFS Shell Stratification\\[6pt]
     \noindent\textbf{Metric extraction (Theorem~\ref{thm:metric}; conditional on [H-L] and [H-lift]).}
     Under [H-L] and Hypothesis~[H-lift] (Hypothesis~\ref{hyp:lift}, open),
     $\LPi = -A\partial_x^2$ is
-    the image, under the Schr\"{o}dinger representation, of the kinetic sector of the
-    sub-Riemannian Laplacian $\DeltaH = \tilde X^2 + \tilde Y^2$ on $\HeisR$, restricted
-    to the admissible sector.
+    $A$ times the image, under the Schr\"{o}dinger representation, of the kinetic sector of the
+    nonnegative operator $-\DeltaH$, with $\DeltaH = \tilde X^2 + \tilde Y^2$ the sub-Laplacian on $\HeisR$,
+    restricted to the admissible sector.
     The full effective operator on the four-dimensional space $\mathbb{R}_\tau \times \HeisR$
     has a principal symbol $A^{\mu\nu} k_\mu k_\nu$ from which the effective co-metric tensor
     $g^{\mu\nu} \propto A^{\mu\nu}$ is read off; it has rank three, with an empty central slot.
@@ -388,8 +388,10 @@ from BFS Shell Stratification\\[6pt]
     \end{theorem}
 
     \begin{proof}
-      Since $\alpha < 1/2$, for large $q$ the radius $nR$ satisfies $q > \max(2nR, 2\lfloor (nR)^2/4\rfloor)$, so the
-      ball of radius $nR$ in $\Gq$ is isometric to that of $\HeisZZ$ (Theorem~\ref{thm:bass}).
+      Since $\alpha < 1/2$, for large $q$ the radius $2nR$ satisfies $q > \max(4nR, 2\lfloor (2nR)^2/4\rfloor)$, so
+      the reduction is injective on the ball of radius $2nR$ and the ball of radius $nR$ in $\Gq$ is isometric to
+      that of $\HeisZZ$, distances between its points being realised by words of length at most $2nR$
+      (Theorem~\ref{thm:bass}).
       Theorem~\ref{thm:pansu} applied to $\Gamma = \HeisZZ$ then gives the Gromov--Hausdorff
       convergence at scale $n$.
       The Hausdorff dimension of $(\HeisR, d_\infty)$ and the spectral dimension of $(\HeisR, \DeltaH)$ equal
@@ -582,6 +584,7 @@ statement.
     the only ones compatible with a finite characteristic cone ordered by $\tau$.
 
     \begin{remark}[Relation to the one-dimensional operator]
+      \label{rem:shadow}
 On the spatial slice $\{\tau = \text{const}\}$, the operator $L_{\mathrm{eff}}$ reduces to
 $A_H \DeltaH$.
 In the Schr\"{o}dinger representation at $\xi = 1$, the kinetic sector of $A_H \DeltaH$
@@ -649,9 +652,9 @@ as the present paper does.
 
     \begin{theorem}[Metric extraction; conditional on {[H-L]} and {[H-lift]}]
       \label{thm:metric}
-      Under Hypotheses~[H-L] and [H-lift], the operator $\LPi = -A\partial_x^2$ lifts
-      to the effective operator $L_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times \HeisR$
-      given by~\eqref{eq:leff}.
+      Under Hypotheses~[H-L] and [H-lift], the operator $\LPi = -A\partial_x^2$ is the kinetic image of
+      $-A_H\DeltaH$ with $A_H = A$ (Remark~\ref{rem:shadow}), and the effective operator $L_{\mathrm{eff}}$ on
+      $\mathbb{R}_\tau \times \HeisR$ is given by~\eqref{eq:leff}.
       Its principal symbol defines, via~\eqref{eq:op-metric}, a leading-order effective
       co-metric tensor, which in the left-invariant frame $(\partial_\tau, \tilde X, \tilde Y, \tilde Z)$ is
       \begin{equation}
@@ -716,7 +719,7 @@ as the present paper does.
       content of open problem Q5b-O2.
     \end{remark}
 
-  \section{Lorentzian Signature from Born--Infeld Admissibility}
+  \section{Lorentzian Signature under the Hyperbolicity Hypothesis}
   \label{sec:lorentz}
 
   \subsection{The signature selection argument}
@@ -769,8 +772,8 @@ For an extension that is diagonal in the left-invariant frame, a positive centra
 only time-like direction; an extension with horizontal--central cross terms need not.
 After normalising the maximal admissible propagation speed to $c = 1$, the non-degenerate block is proportional
 to $\mathrm{diag}(-1,+1,+1)$ in the homogeneous isotropic regime.
-The hyperbolicity hypothesis is an explicit assumption of~\cite{Beau2026c}, motivated there by the Born--Infeld
-capacity bound but not derived from it.
+The hyperbolicity hypothesis is an explicit assumption of~\cite{Beau2026c}; it is not derived from the capacity
+bound.
     \end{proof}
 
     \begin{remark}[Status of the signature]
@@ -782,8 +785,9 @@ capacity bound but not derived from it.
       gives $\Dhom = 4$~\cite{Beau2026m,Beau2026HeisenbergStructure}; the projective ordering, supported numerically,
       which gives the direction $\tau$~\cite{Beau2026pto}; and the hyperbolicity hypothesis.
       Under the same hypotheses, and once an extension $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$ with $A_z > 0$ is
-      supplied (open problem Q5b-O2), Minkowski geometry would be the effective description of a maximally symmetric
-      admissible regime.
+      supplied (open problem Q5b-O2), the co-metric would be, near the identity and at leading order, proportional to
+      the Minkowski form in a maximally symmetric admissible regime; a left-invariant metric on $\HeisR$ is not flat,
+      so this is a local statement only.
       This is the conditional content of the claim in~\cite{Cosmochrony} that spacetime is a ``large-$q$ limit of
       the discrete observable space $\mathcal{O}$, with the four-dimensional structure inherited from the homogeneous
       dimension of $G_q$.''
@@ -832,7 +836,7 @@ capacity bound but not derived from it.
         Structural (from above) \\
         {[H-L]} & Spatial limit $\LPi = -A\partial_x^2$ exists &
         Hypothesis; not established (Q5a no-go) \\
-        {[H-lift]} & $\LPi$ is kinetic sector of $d\pi_1(\DeltaH)$ &
+        {[H-lift]} & $\LPi$ is $A$ times the kinetic sector of $-d\pi_1(\DeltaH)$ &
         Hypothesis; open (Q9~\cite{Beau2026q9}: sufficient conditions) \\
         Thm.~\ref{thm:metric} & Rank-three co-metric $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
         Conditional on [H-L] and [H-lift] \\
@@ -885,8 +889,8 @@ capacity bound but not derived from it.
     Q11~\cite{Beau2026q11} identifies $A_\tau = 2$ through the Casimir normalisation; by the scale freedom recorded
     under Q5b-O2, that normalisation fixes no coefficient, so no value of $A_\tau$ is established on the inputs
     available here.
-    Conditionally on [H-L], [H-lift] and the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c}
-    (Theorem~\ref{thm:lorentz}), the non-degenerate block of the co-metric has signature $(-,+,+)$.
+    Conditionally on [H-L], [H-lift] and the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c} applied to the
+    reduced operator~\eqref{eq:lred} (Theorem~\ref{thm:lorentz}), the non-degenerate block of the co-metric has signature $(-,+,+)$.
     Establishing [H-L], or replacing it, and constructing a full-rank extension are the open content of Q5.
 
   \section{Conclusion}
@@ -899,7 +903,8 @@ capacity bound but not derived from it.
     homogeneous dimension is four (Theorem~\ref{thm:carnot}).
     Under the two open hypotheses [H-L] and [H-lift], the effective operator on $\mathbb{R}_\tau \times \HeisR$ has a
     rank-three co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the left-invariant frame
-    (Theorem~\ref{thm:metric}), and under [H-hyp] its non-degenerate block has signature $(-,+,+)$
+    (Theorem~\ref{thm:metric}), and under [H-hyp] applied to its $z$-independent reduction its non-degenerate
+    block has signature $(-,+,+)$
     (Theorem~\ref{thm:lorentz}).
     The central slot is not filled by lower-order terms, and no metric coefficient has an established value.
 

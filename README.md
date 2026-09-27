@@ -16,8 +16,8 @@ $L^2(\mathbb{R})$), and every result consuming $L_\Pi$ is stated conditionally o
    sub-Finsler Carnot–Carathéodory metric on $\mathrm{Heis}_3(\mathbb{R})$; the homogeneous dimension $D_{\mathrm{hom}} = 4$
    (Bass–Guivarc'h) gives the limiting geometry the spectral and volume-growth properties of a four-dimensional
    space.
-2. **Metric extraction (conditional on [H-L] and [H-lift])**: under the lifting hypothesis [H-lift], $L_\Pi$ is the
-   image, under the Schrödinger representation, of the kinetic sector of the sub-Laplacian $\Delta_H$, and the
+2. **Metric extraction (conditional on [H-L] and [H-lift])**: under the lifting hypothesis [H-lift], $L_\Pi$ is $A$
+   times the image, under the Schrödinger representation, of the kinetic sector of $-\Delta_H$, and the
    principal symbol of the effective operator gives the co-metric $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ in the
    left-invariant frame. It has rank three; no lower-order term fills the central slot.
 3. **Signature (conditional also on [H-hyp])**: the hyperbolicity hypothesis [H-hyp], applied to the sector that does
