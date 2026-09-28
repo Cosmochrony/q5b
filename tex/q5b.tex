@@ -288,9 +288,11 @@ from BFS Shell Stratification\\[6pt]
       \end{equation}
       (Pansu~\cite{Pansu1983}), for constants $0 < c_1 \le C \le c_2$.
       The central coordinate of an element of $B_n(\HeisZZ)$ is at most $\lfloor n^2/4\rfloor$ in absolute value, and
-      if $q > \max(2n, 2\lfloor n^2/4\rfloor)$ the reduction $\HeisZZ \to \Gq$ is injective and distance-preserving on
-      $B_n$~\cite{Beau2026ccnote}; the same balls, and hence the same growth, hold for $\Gq = \HeisZ$ when
-      $n \ll \sqrt q$.
+      if $q > \max(2n, 2\lfloor n^2/4\rfloor)$ the reduction $\HeisZZ \to \Gq$ is injective on
+      $B_n$~\cite{Beau2026ccnote}.
+      It then maps $B_n(\HeisZZ)$ bijectively onto $\Bn(\Gq)$ and preserves word length from the identity, so the
+      two balls have the same cardinality and the same growth when $n \ll \sqrt q$; distances between arbitrary points
+      of the ball are preserved when the condition holds at radius $2n$.
     \end{theorem}
 
     The exponent $4 = \Dhom$ is the Bass--Guivarc'h homogeneous dimension of $\HeisR$.
@@ -374,8 +376,9 @@ from BFS Shell Stratification\\[6pt]
     The finite group $\Gq = \HeisZ$ differs from $\HeisZZ$ only through the identification
     $k \equiv k + q$ in each coordinate direction.
     The central coordinate reaches $\lfloor n^2/4\rfloor$ on $B_n$, so the identification stays inactive only while
-    $q > \max(2n, 2\lfloor n^2/4\rfloor)$ (Theorem~\ref{thm:bass}); in that range the BFS ball $\Bn(\Gq)$ is
-    isometric to $\Bn(\HeisZZ)$.
+    $q > \max(2n, 2\lfloor n^2/4\rfloor)$ (Theorem~\ref{thm:bass}); in that range the reduction is injective on the
+    BFS ball and preserves word length from the identity, and under the same condition at radius $2n$ the ball
+    $\Bn(\Gq)$ is isometric to $\Bn(\HeisZZ)$.
 
     \begin{theorem}[Carnot convergence; structural]
       \label{thm:carnot}
@@ -741,7 +744,7 @@ as the present paper does.
     We write [H-hyp$_{\mathrm{red}}$] for [H-hyp] of~\cite{Beau2026c} applied to $L_{\mathrm{red}}$.
 
     \begin{theorem}[Lorentzian signature; conditional on Theorem~\ref{thm:metric} and on
-      the hyperbolicity hypothesis {[H-hyp]} of~{\cite{Beau2026c}}]
+      {[H-hyp$_{\mathrm{red}}$]}]
       \label{thm:lorentz}
       In homogeneous and quasi-isotropic admissible regimes, and under [H-hyp$_{\mathrm{red}}$], the principal
       symbol of $L_{\mathrm{red}}$, which is the non-degenerate block $(-A_\tau, A_H, A_H)$ of the effective
@@ -842,7 +845,7 @@ bound.
         Thm.~\ref{thm:metric} & Rank-three co-metric $g^{\mu\nu} \propto A^{\mu\nu}$ from symbol &
         Conditional on [H-L] and [H-lift] \\
         Thm.~\ref{thm:lorentz} & Signature $(-,+,+)$ of the non-degenerate block &
-        Conditional on Thm.~\ref{thm:metric} and [H-hyp] of~\cite{Beau2026c} \\
+        Conditional on Thm.~\ref{thm:metric} and [H-hyp$_{\mathrm{red}}$] \\
         \hline
         Q5b-O1 & Prove [H-lift] via Plancherel decomposition &
         Open; Q9~\cite{Beau2026q9} gives sufficient conditions \\
