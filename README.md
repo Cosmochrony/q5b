@@ -30,8 +30,8 @@ $L^2(\mathbb{R})$), and every result consuming $L_\Pi$ is stated conditionally o
 - **Q5b-O2 is open.** Q8 shows that the Heisenberg commutator supplies no central coefficient: a full-rank extension
   requires a new operator with a term $\tilde Z^2$ of homogeneous degree four, which carries a length scale.
 - **No coefficient value is established.** Q10 derives no value of $A_H$; Q8 shows that $\mathfrak{su}(2)$-invariance
-  leaves the common value of an isotropic form free; the value $A_\tau = 2$ asserted in Q11 rests on the same Casimir
-  normalisation.
+  leaves the common value of an isotropic form free; Q11 shows that spatial $\mathrm{SU}(2)$ invariance leaves
+  $A_\tau$ independent of the spatial coefficients.
 - The paper uses the group law $z'' = z + z' + \tfrac12(x'y - xy')$, for which
   $\tilde X = \partial_x + \tfrac{y}{2}\partial_z$ and $\tilde Y = \partial_y - \tfrac{x}{2}\partial_z$ are
   left-invariant and $[\tilde X, \tilde Y] = -\tilde Z$.
